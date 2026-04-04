@@ -1,13 +1,13 @@
 import { motion, useScroll } from 'framer-motion';
-import Navbar from '../components/Navbar';
-import Hero from '../components/Hero';
-import Statistics from '../components/Statistics';
-import About from '../components/About';
-import Curriculum from '../components/Curriculum';
-import Pathway from '../components/Pathway';
-import Gallery from '../components/Gallery';
-import FAQ from '../components/FAQ';
-import Footer from '../components/Footer';
+import Navbar from '@/components/Navbar';
+import Hero from '@/components/Hero';
+import Statistics from '@/components/Statistics';
+import About from '@/components/About';
+import Curriculum from '@/components/Curriculum';
+import Pathway from '@/components/Pathway';
+import Gallery from '@/components/Gallery';
+import FAQ from '@/components/FAQ';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   const { scrollYProgress } = useScroll();
