@@ -2,11 +2,11 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 
 const images = [
-  "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=2940&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=2940&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2940&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2940&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1563206767-5b18f218e8de?q=80&w=2938&auto=format&fit=crop"
+  "https://raw.githubusercontent.com/STEM-AI/RPAIR/main/frontend/src/assets/gallery/Robotics/Vex123/FutureComp-sadat/3.jpg",
+  "https://raw.githubusercontent.com/STEM-AI/RPAIR/main/frontend/src/assets/gallery/Robotics/VexGO/FutureComp-sadat/2.jpg",
+  "https://raw.githubusercontent.com/STEM-AI/RPAIR/main/frontend/src/assets/gallery/Robotics/VexIQ/NationalComp/2.JPG",
+  "https://raw.githubusercontent.com/STEM-AI/RPAIR/main/frontend/src/assets/gallery/Robotics/VexIQ/NationalComp/3.JPG",
+  "https://raw.githubusercontent.com/STEM-AI/RPAIR/main/frontend/src/assets/gallery/Robotics/VexV5/1.jpg"
 ];
 
 export default function Gallery() {
@@ -20,7 +20,7 @@ export default function Gallery() {
   const x2 = useTransform(scrollYProgress, [0, 1], ["-20%", "0%"]);
 
   return (
-    <section ref={containerRef} className="py-32 bg-white overflow-hidden">
+    <section id="gallery" ref={containerRef} className="py-32 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 mb-24">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
