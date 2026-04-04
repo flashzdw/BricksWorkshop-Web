@@ -17,16 +17,16 @@ export default function Navbar() {
           </div>
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
-              <a href="#" className="text-zinc-500 hover:text-zinc-900 px-3 py-2 rounded-md text-sm font-medium transition-colors">
+              <a href="#hero" className="text-zinc-500 hover:text-zinc-900 px-3 py-2 rounded-md text-sm font-medium transition-colors">
                 首页
               </a>
-              <a href="#" className="text-zinc-500 hover:text-zinc-900 px-3 py-2 rounded-md text-sm font-medium transition-colors">
+              <a href="#about" className="text-zinc-500 hover:text-zinc-900 px-3 py-2 rounded-md text-sm font-medium transition-colors">
                 机构介绍
               </a>
-              <a href="#" className="text-zinc-500 hover:text-zinc-900 px-3 py-2 rounded-md text-sm font-medium transition-colors">
+              <a href="#curriculum" className="text-zinc-500 hover:text-zinc-900 px-3 py-2 rounded-md text-sm font-medium transition-colors">
                 课程体系
               </a>
-              <a href="#" className="text-zinc-500 hover:text-zinc-900 px-3 py-2 rounded-md text-sm font-medium transition-colors">
+              <a href="#gallery" className="text-zinc-500 hover:text-zinc-900 px-3 py-2 rounded-md text-sm font-medium transition-colors">
                 风采展示
               </a>
             </div>

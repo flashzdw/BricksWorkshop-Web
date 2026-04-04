@@ -21,7 +21,7 @@ const features = [
 
 export default function About() {
   return (
-    <section className="py-32 bg-white relative">
+    <section id="about" className="py-32 bg-white relative">
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}

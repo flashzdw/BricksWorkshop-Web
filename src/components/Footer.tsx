@@ -56,9 +56,9 @@ export default function Footer() {
           >
             <h5 className="text-sm font-bold text-zinc-900 uppercase tracking-widest mb-6">快速链接</h5>
             <ul className="space-y-3">
-              <li><a href="#" className="text-zinc-500 hover:text-zinc-900 font-light transition-colors">关于我们</a></li>
-              <li><a href="#" className="text-zinc-500 hover:text-zinc-900 font-light transition-colors">课程体系</a></li>
-              <li><a href="#" className="text-zinc-500 hover:text-zinc-900 font-light transition-colors">风采展示</a></li>
+              <li><a href="#about" className="text-zinc-500 hover:text-zinc-900 font-light transition-colors">关于我们</a></li>
+              <li><a href="#curriculum" className="text-zinc-500 hover:text-zinc-900 font-light transition-colors">课程体系</a></li>
+              <li><a href="#gallery" className="text-zinc-500 hover:text-zinc-900 font-light transition-colors">风采展示</a></li>
             </ul>
           </motion.div>
         </div>

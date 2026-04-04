@@ -20,7 +20,7 @@ export default function Gallery() {
   const x2 = useTransform(scrollYProgress, [0, 1], ["-20%", "0%"]);
 
   return (
-    <section ref={containerRef} className="py-32 bg-white overflow-hidden">
+    <section id="gallery" ref={containerRef} className="py-32 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 mb-24">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
