@@ -50,6 +50,10 @@ jobs:
       - name: Add .nojekyll
         run: touch dist/.nojekyll
 
+      # 复制 index.html 到 404.html 以支持单页应用的路由
+      - name: Add 404.html
+        run: cp dist/index.html dist/404.html
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
