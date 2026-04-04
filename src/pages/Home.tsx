@@ -4,7 +4,9 @@ import Hero from '../components/Hero';
 import Statistics from '../components/Statistics';
 import About from '../components/About';
 import Curriculum from '../components/Curriculum';
+import Pathway from '../components/Pathway';
 import Gallery from '../components/Gallery';
+import FAQ from '../components/FAQ';
 import Footer from '../components/Footer';
 
 export default function Home() {
@@ -22,7 +24,9 @@ export default function Home() {
         <Statistics />
         <About />
         <Curriculum />
+        <Pathway />
         <Gallery />
+        <FAQ />
       </main>
       <Footer />
     </div>

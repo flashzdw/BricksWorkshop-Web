@@ -7,7 +7,7 @@ const courses = [
     age: '4-7岁',
     desc: '启蒙阶段。通过无屏编程，引导幼儿在玩乐中理解基础逻辑与序列，激发对科技的初步好奇心。',
     gradient: 'from-red-400 to-orange-400',
-    image: 'https://images.unsplash.com/photo-1596495578065-6e0763fa1178?q=80&w=2942&auto=format&fit=crop'
+    image: 'https://raw.githubusercontent.com/STEM-AI/RPAIR/main/frontend/src/assets/cards/vex-123.png'
   },
   {
     id: 'go',
@@ -15,7 +15,7 @@ const courses = [
     age: '8-10岁',
     desc: '探索阶段。结合结构搭建与简单代码，培养空间想象力和问题解决能力，完成从具象到抽象的过渡。',
     gradient: 'from-green-400 to-teal-400',
-    image: 'https://images.unsplash.com/photo-1585366119957-e9730b6d0f60?q=80&w=2942&auto=format&fit=crop'
+    image: 'https://raw.githubusercontent.com/STEM-AI/RPAIR/main/frontend/src/assets/cards/vex-go.webp'
   },
   {
     id: 'iq',
@@ -23,7 +23,7 @@ const courses = [
     age: '11-14岁',
     desc: '进阶阶段。复杂机械结构与高级传感器编程，团队协作完成高难度挑战，为参与国际赛事打下坚实基础。',
     gradient: 'from-blue-500 to-indigo-500',
-    image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=2940&auto=format&fit=crop'
+    image: 'https://raw.githubusercontent.com/STEM-AI/RPAIR/main/frontend/src/assets/cards/vexiq.webp'
   }
 ];
 

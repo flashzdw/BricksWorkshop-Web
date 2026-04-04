@@ -26,8 +26,14 @@ export default function Navbar() {
               <a href="#curriculum" className="text-zinc-500 hover:text-zinc-900 px-3 py-2 rounded-md text-sm font-medium transition-colors">
                 课程体系
               </a>
+              <a href="#pathway" className="text-zinc-500 hover:text-zinc-900 px-3 py-2 rounded-md text-sm font-medium transition-colors">
+                赛事路径
+              </a>
               <a href="#gallery" className="text-zinc-500 hover:text-zinc-900 px-3 py-2 rounded-md text-sm font-medium transition-colors">
                 风采展示
+              </a>
+              <a href="#faq" className="text-zinc-500 hover:text-zinc-900 px-3 py-2 rounded-md text-sm font-medium transition-colors">
+                常见问题
               </a>
             </div>
           </div>
