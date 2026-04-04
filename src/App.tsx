@@ -5,7 +5,7 @@ const Home = React.lazy(() => import("@/pages/Home"));
 
 export default function App() {
   return (
-    <Router basename="/">
+    <Router basename="/BricksWorkshop-Web">
       <Suspense fallback={<div className="flex items-center justify-center min-h-screen text-zinc-500">Loading...</div>}>
         <Routes>
           <Route path="/" element={<Home />} />
