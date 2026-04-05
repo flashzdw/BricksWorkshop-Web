@@ -9,7 +9,7 @@ const courses = [
     age: '4-7岁',
     desc: '启蒙阶段。通过无屏编程，引导幼儿在玩乐中理解基础逻辑与序列，激发对科技的初步好奇心。',
     gradient: 'from-red-400 to-orange-400',
-    image: 'https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=A%20cute%20interactive%20colorful%20educational%20robot%20for%20young%20kids%20aged%204%20to%207%2C%20bright%20colors%2C%20friendly%20design%2C%20learning%20by%20playing%2C%20high%20quality%20product%20photography&image_size=landscape_4_3',
+    image: '/gallery/4.jpeg',
     details: {
       features: [
         '触碰式编程：通过简单的触碰机器人控制动作和声音',
@@ -30,7 +30,7 @@ const courses = [
     age: '8-10岁',
     desc: '探索阶段。结合结构搭建与简单代码，培养空间想象力和问题解决能力，完成从具象到抽象的过渡。',
     gradient: 'from-green-400 to-teal-400',
-    image: 'https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=A%20modular%20snap-together%20robot%20built%20from%20colorful%20plastic%20pieces%2C%20STEM%20education%20for%20kids%2C%20creative%20structure%2C%20bright%20lighting%2C%20high%20quality%20product%20photography&image_size=landscape_4_3',
+    image: '/gallery/5.jpeg',
     details: {
       features: [
         '模块化拼插结构：按颜色分类，易于搭建与无忧收纳',
@@ -51,7 +51,7 @@ const courses = [
     age: '11-14岁',
     desc: '进阶阶段。复杂机械结构与高级传感器编程，团队协作完成高难度挑战，为参与国际赛事打下坚实基础。',
     gradient: 'from-blue-500 to-indigo-500',
-    image: 'https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=An%20advanced%20complex%20robotics%20kit%20with%20smart%20motors%20and%20sensors%2C%20competition%20ready%20robot%20built%20by%20teenagers%2C%20professional%20STEM%20education%2C%20high%20quality%20product%20photography&image_size=landscape_4_3',
+    image: '/gallery/6.jpeg',
     details: {
       features: [
         '高级工程结构：无需工具即可构建出保持高强度的复杂机械',
