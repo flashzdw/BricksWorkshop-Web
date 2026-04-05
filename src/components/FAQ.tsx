@@ -25,19 +25,19 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="py-32 bg-zinc-50 relative">
+    <section id="faq" className="py-16 sm:py-24 lg:py-32 bg-zinc-50 relative">
       <div className="max-w-4xl mx-auto px-6 sm:px-8">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-center mb-12 sm:mb-16"
         >
-          <h2 className="text-4xl sm:text-5xl font-bold text-zinc-900 mb-6 tracking-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-zinc-900 mb-6 tracking-tight">
             家长<span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-500">关心的问题</span>
           </h2>
-          <p className="text-xl text-zinc-500 font-light">
+          <p className="text-lg sm:text-xl text-zinc-500 font-light">
             我们整理了最常见的疑问，帮助您更好地了解卓越科技的教育体系。
           </p>
         </motion.div>
@@ -53,14 +53,14 @@ export default function FAQ() {
               className="bg-white border border-zinc-200 rounded-2xl overflow-hidden hover:border-orange-200 transition-colors duration-300"
             >
               <button
-                className="w-full px-5 sm:px-6 py-5 sm:py-6 text-left flex items-center justify-between focus:outline-none"
+                className="w-full px-4 sm:px-6 py-4 sm:py-6 text-left flex items-center justify-between focus:outline-none"
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
               >
                 <span className={`text-base sm:text-lg font-semibold pr-4 transition-colors duration-300 ${openIndex === index ? 'text-orange-500' : 'text-zinc-900'}`}>
                   {faq.question}
                 </span>
                 <ChevronDown 
-                  className={`w-5 h-5 text-zinc-400 transition-transform duration-300 ${openIndex === index ? 'rotate-180 text-orange-500' : ''}`} 
+                  className={`w-5 h-5 text-zinc-400 shrink-0 transition-transform duration-300 ${openIndex === index ? 'rotate-180 text-orange-500' : ''}`} 
                 />
               </button>
               
@@ -72,7 +72,7 @@ export default function FAQ() {
                     exit={{ height: 0, opacity: 0 }}
                     transition={{ duration: 0.3, ease: "easeInOut" }}
                   >
-                    <div className="px-5 sm:px-6 pb-5 sm:pb-6 pt-4 text-sm sm:text-base text-zinc-500 font-light leading-relaxed border-t border-zinc-100">
+                    <div className="px-4 sm:px-6 pb-4 sm:pb-6 pt-3 sm:pt-4 text-sm sm:text-base text-zinc-500 font-light leading-relaxed border-t border-zinc-100">
                       {faq.answer}
                     </div>
                   </motion.div>

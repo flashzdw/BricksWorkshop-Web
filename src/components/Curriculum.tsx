@@ -29,20 +29,20 @@ const courses = [
 
 export default function Curriculum() {
   return (
-    <section id="curriculum" className="py-32 bg-zinc-50 relative overflow-hidden">
+    <section id="curriculum" className="py-16 sm:py-24 lg:py-32 bg-zinc-50 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 relative z-10">
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8 }}
-          className="mb-24"
+          className="mb-12 sm:mb-24"
         >
-          <h2 className="text-4xl sm:text-5xl font-bold text-zinc-900 mb-6 tracking-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-zinc-900 mb-6 tracking-tight">
             全生命周期 <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500">机器人教育体系</span>
           </h2>
-          <p className="text-xl text-zinc-500 font-light">
+          <p className="text-lg sm:text-xl text-zinc-500 font-light">
             我们提供与国际接轨的 VEX 课程，陪伴孩子从零开始的每一次突破。
           </p>
         </motion.div>

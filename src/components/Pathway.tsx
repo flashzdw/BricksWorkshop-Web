@@ -30,7 +30,7 @@ const steps = [
 
 export default function Pathway() {
   return (
-    <section id="pathway" className="py-32 bg-white relative overflow-hidden">
+    <section id="pathway" className="py-16 sm:py-24 lg:py-32 bg-white relative overflow-hidden">
       <div className="absolute top-1/2 left-0 w-96 h-96 bg-gradient-to-r from-blue-100 to-purple-100 rounded-full mix-blend-multiply filter blur-3xl opacity-50 -translate-y-1/2"></div>
       
       <div className="max-w-7xl mx-auto px-6 sm:px-8 relative z-10">
@@ -39,12 +39,12 @@ export default function Pathway() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-24"
+          className="text-center mb-16 sm:mb-24"
         >
-          <h2 className="text-4xl sm:text-5xl font-bold text-zinc-900 mb-6 tracking-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-zinc-900 mb-6 tracking-tight">
             从<span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500">零基础</span>到世界舞台
           </h2>
-          <p className="text-xl text-zinc-500 font-light max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-zinc-500 font-light max-w-2xl mx-auto">
             清晰的进阶赛事规划，让孩子每一次的进步都能得到权威认证。
           </p>
         </motion.div>
