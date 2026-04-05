@@ -9,7 +9,7 @@ const courses = [
     age: '4-7岁',
     desc: '启蒙阶段。通过无屏编程，引导幼儿在玩乐中理解基础逻辑与序列，激发对科技的初步好奇心。',
     gradient: 'from-red-400 to-orange-400',
-    image: '/gallery/4.jpeg',
+    image: '/gallery/vex-123.png',
     details: {
       features: [
         '触碰式编程：通过简单的触碰机器人控制动作和声音',
@@ -30,7 +30,7 @@ const courses = [
     age: '8-10岁',
     desc: '探索阶段。结合结构搭建与简单代码，培养空间想象力和问题解决能力，完成从具象到抽象的过渡。',
     gradient: 'from-green-400 to-teal-400',
-    image: '/gallery/5.jpeg',
+    image: '/gallery/vex-go.png',
     details: {
       features: [
         '模块化拼插结构：按颜色分类，易于搭建与无忧收纳',
@@ -51,7 +51,7 @@ const courses = [
     age: '11-14岁',
     desc: '进阶阶段。复杂机械结构与高级传感器编程，团队协作完成高难度挑战，为参与国际赛事打下坚实基础。',
     gradient: 'from-blue-500 to-indigo-500',
-    image: '/gallery/6.jpeg',
+    image: '/gallery/vex-iq.png',
     details: {
       features: [
         '高级工程结构：无需工具即可构建出保持高强度的复杂机械',
