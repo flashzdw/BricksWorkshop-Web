@@ -16,8 +16,7 @@ export default function Footer() {
               transition={{ duration: 0.6 }}
             >
               <h4 className="text-3xl font-extrabold text-zinc-900 mb-4 tracking-tighter flex items-center gap-3">
-                <img src="/logo.png" alt="Bricks Workshop Logo" className="h-8 w-auto object-contain" />
-                Bricks<span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-pink-500">Workshop</span>
+                <img src="/logo_3048.jpeg" alt="Bricks Workshop Logo" className="h-12 w-auto object-contain" />
               </h4>
               <p className="text-zinc-500 font-light leading-relaxed max-w-sm mb-6">
                 点燃青少年的科技梦想，培养未来世界的创新领袖。卓越科技，见证每一次成长。

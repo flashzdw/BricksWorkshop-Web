@@ -3,7 +3,7 @@ import { Mouse } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center bg-white overflow-hidden">
+    <section id="hero" className="relative min-h-screen flex flex-col items-center justify-center bg-white overflow-hidden">
       {/* Background Subtle Gradient */}
       <div className="absolute inset-0 z-0 opacity-20 pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-64 h-64 sm:w-96 sm:h-96 bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400 rounded-full mix-blend-multiply filter blur-3xl animate-blob"></div>
