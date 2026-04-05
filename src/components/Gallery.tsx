@@ -38,10 +38,10 @@ export default function Gallery() {
         </motion.div>
       </div>
 
-      <div className="flex flex-col gap-8 w-[150vw] -ml-[25vw]">
-        <motion.div style={{ x: x1 }} className="flex gap-8">
+      <div className="flex flex-col gap-4 md:gap-8 w-[250vw] md:w-[150vw] -ml-[75vw] md:-ml-[25vw]">
+        <motion.div style={{ x: x1 }} className="flex gap-4 md:gap-8">
           {images.slice(0, 3).map((src, i) => (
-            <div key={i} className="relative aspect-[16/9] w-[40vw] flex-shrink-0 overflow-hidden rounded-2xl group">
+            <div key={i} className="relative aspect-[16/9] w-[75vw] md:w-[40vw] flex-shrink-0 overflow-hidden rounded-2xl group">
               <img 
                 src={src} 
                 alt="课堂风采" 
@@ -53,9 +53,9 @@ export default function Gallery() {
           ))}
         </motion.div>
 
-        <motion.div style={{ x: x2 }} className="flex gap-8">
+        <motion.div style={{ x: x2 }} className="flex gap-4 md:gap-8">
           {images.slice(2, 5).map((src, i) => (
-            <div key={i} className="relative aspect-[16/9] w-[40vw] flex-shrink-0 overflow-hidden rounded-2xl group">
+            <div key={i} className="relative aspect-[16/9] w-[75vw] md:w-[40vw] flex-shrink-0 overflow-hidden rounded-2xl group">
               <img 
                 src={src} 
                 alt="课堂风采" 

@@ -43,7 +43,7 @@ export default function Statistics() {
   return (
     <section className="py-24 bg-white relative z-10 border-y border-zinc-100">
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 sm:gap-12 text-center">
           {stats.map((stat, index) => (
             <motion.div
               key={index}
