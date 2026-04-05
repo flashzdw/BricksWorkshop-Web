@@ -36,21 +36,21 @@ const features = [
 
 export default function About() {
   return (
-    <section id="about" className="py-32 bg-white relative">
+    <section id="about" className="py-16 sm:py-24 lg:py-32 bg-white relative">
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8 }}
-          className="mb-20"
+          className="mb-12 sm:mb-20"
         >
-          <h2 className="text-4xl sm:text-5xl font-bold text-zinc-900 mb-8 tracking-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-zinc-900 mb-8 tracking-tight">
             重新定义 <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500">青少年科技教育</span>
           </h2>
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-24">
-            <p className="text-xl md:text-2xl text-zinc-500 font-light leading-relaxed flex-1">
+          <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 lg:gap-24">
+            <p className="text-lg sm:text-xl md:text-2xl text-zinc-500 font-light leading-relaxed flex-1">
               卓越科技 BricksWorkshop 是中国西北地区首家 VEX 官方授权学苑。我们坐落于美丽的陕西汉中滨江路，不仅是一个学习机器人搭建与编程的地方，更是一个激发潜能、塑造未来创新者的前沿阵地。
             </p>
             <p className="text-base md:text-lg text-zinc-400 font-light leading-relaxed flex-1">
@@ -59,7 +59,7 @@ export default function About() {
           </div>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 sm:gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-12 lg:gap-16">
           {features.map((feature, index) => (
             <motion.div
               key={index}

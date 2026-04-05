@@ -3,11 +3,11 @@ import { MapPin, Hash, Sparkles } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="bg-zinc-50 py-24 border-t border-zinc-100 relative overflow-hidden">
-      <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-pink-200 to-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 pointer-events-none"></div>
+    <footer className="bg-zinc-50 py-12 sm:py-16 lg:py-24 border-t border-zinc-100 relative overflow-hidden">
+      <div className="absolute top-0 right-0 w-48 h-48 sm:w-64 sm:h-64 bg-gradient-to-bl from-pink-200 to-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 pointer-events-none"></div>
       
       <div className="max-w-7xl mx-auto px-6 sm:px-8 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12 mb-12 sm:mb-16">
           <div className="lg:col-span-2">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
