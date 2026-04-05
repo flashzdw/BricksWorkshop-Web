@@ -16,8 +16,8 @@ export default function Footer() {
               transition={{ duration: 0.6 }}
             >
               <h4 className="text-3xl font-extrabold text-zinc-900 mb-4 tracking-tighter flex items-center gap-3">
-                <img src="/logo.png" alt="VEX Academy Logo" className="h-8 w-auto object-contain" />
-                VEX <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-pink-500">Academy</span>
+                <img src="/logo.png" alt="Bricks Workshop Logo" className="h-8 w-auto object-contain" />
+                Bricks<span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-pink-500">Workshop</span>
               </h4>
               <p className="text-zinc-500 font-light leading-relaxed max-w-sm mb-6">
                 点燃青少年的科技梦想，培养未来世界的创新领袖。卓越科技，见证每一次成长。
@@ -72,7 +72,7 @@ export default function Footer() {
           className="pt-8 border-t border-zinc-200 text-center sm:text-left flex flex-col sm:flex-row justify-between items-center"
         >
           <p className="text-zinc-400 text-sm font-light">
-            &copy; {new Date().getFullYear()} 卓越科技 VEX Academy. All rights reserved.
+            &copy; {new Date().getFullYear()} 卓越科技 BricksWorkshop. All rights reserved.
           </p>
           <p className="text-zinc-400 text-sm font-light mt-2 sm:mt-0">
             西北首家 VEX 学苑
