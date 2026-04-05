@@ -11,7 +11,7 @@ export default function Hero() {
         <div className="absolute bottom-1/4 left-1/2 w-64 h-64 sm:w-96 sm:h-96 bg-gradient-to-r from-blue-300 via-cyan-200 to-teal-300 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-4000"></div>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 text-center mt-16 sm:mt-20">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 text-center pt-8 sm:pt-0">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}

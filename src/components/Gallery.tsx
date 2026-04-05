@@ -2,11 +2,11 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 
 const images = [
-  "https://raw.githubusercontent.com/STEM-AI/RPAIR/main/frontend/src/assets/gallery/Robotics/Vex123/FutureComp-sadat/3.jpg",
-  "https://raw.githubusercontent.com/STEM-AI/RPAIR/main/frontend/src/assets/gallery/Robotics/VexGO/FutureComp-sadat/2.jpg",
-  "https://raw.githubusercontent.com/STEM-AI/RPAIR/main/frontend/src/assets/gallery/Robotics/VexIQ/NationalComp/2.JPG",
-  "https://raw.githubusercontent.com/STEM-AI/RPAIR/main/frontend/src/assets/gallery/Robotics/VexIQ/NationalComp/3.JPG",
-  "https://raw.githubusercontent.com/STEM-AI/RPAIR/main/frontend/src/assets/gallery/Robotics/VexV5/1.jpg"
+  "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Asian%20children%20building%20a%20VEX%20robot%20in%20a%20classroom%2C%20bright%20lighting%2C%20high%20quality%20photography&image_size=landscape_16_9",
+  "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Kids%20programming%20a%20robot%20with%20a%20tablet%20in%20a%20robotics%20workshop%2C%20modern%20educational%20setting&image_size=landscape_16_9",
+  "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=A%20group%20of%20young%20students%20smiling%20with%20their%20VEX%20IQ%20robot%20at%20a%20competition%2C%20energetic%20atmosphere&image_size=landscape_16_9",
+  "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Close%20up%20of%20children%20hands%20assembling%20colorful%20plastic%20robot%20parts%2C%20focus%20on%20creativity%2C%20educational&image_size=landscape_16_9",
+  "https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Robotics%20competition%20arena%2C%20a%20futuristic%20robot%20navigating%20a%20field%2C%20teenagers%20watching%20excitedly&image_size=landscape_16_9"
 ];
 
 export default function Gallery() {
