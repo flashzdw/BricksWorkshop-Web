@@ -10,6 +10,7 @@ export default function Navbar() {
     { href: '#about', label: '机构介绍' },
     { href: '#curriculum', label: '课程体系' },
     { href: '#pathway', label: '赛事路径' },
+    { href: '#campus', label: '校区环境' },
     { href: '#gallery', label: '风采展示' },
     { href: '#faq', label: '常见问题' }
   ];
@@ -24,7 +25,6 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0 flex items-center gap-3">
-            <img src="/logo.png" alt="VEX Academy Logo" className="h-8 w-auto object-contain" />
             <span className="text-xl font-bold text-zinc-900 tracking-tight">
               VEX <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-pink-500">Academy</span>
             </span>

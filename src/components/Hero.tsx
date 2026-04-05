@@ -18,8 +18,7 @@ export default function Hero() {
           transition={{ duration: 1, ease: "easeOut" }}
         >
           <h1 className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-extrabold tracking-tighter text-zinc-900 mb-6 flex flex-col items-center justify-center gap-6 sm:flex-row sm:gap-8">
-            <img src="/logo.png" alt="VEX Academy Logo" className="h-24 sm:h-32 md:h-48 w-auto object-contain" />
-            <span>VEX <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-yellow-500 to-blue-500">Academy</span></span>
+            <span>Bricks<span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-yellow-500 to-blue-500">Workshop</span></span>
           </h1>
           <p className="text-lg sm:text-xl md:text-2xl text-zinc-500 font-light max-w-2xl mx-auto mb-12">
             专注力与创造力的起点。西北首家 VEX 学苑，探索未来科技的无限可能。

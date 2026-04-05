@@ -5,6 +5,7 @@ import Statistics from '@/components/Statistics';
 import About from '@/components/About';
 import Curriculum from '@/components/Curriculum';
 import Pathway from '@/components/Pathway';
+import Campus from '@/components/Campus';
 import Gallery from '@/components/Gallery';
 import FAQ from '@/components/FAQ';
 import Footer from '@/components/Footer';
@@ -26,6 +27,7 @@ export default function Home() {
         <About />
         <Curriculum />
         <Pathway />
+        <Campus />
         <Gallery />
         <FAQ />
       </main>
