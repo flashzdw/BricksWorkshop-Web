@@ -53,10 +53,10 @@ export default function FAQ() {
               className="bg-white border border-zinc-200 rounded-2xl overflow-hidden hover:border-orange-200 transition-colors duration-300"
             >
               <button
-                className="w-full px-6 py-6 text-left flex items-center justify-between focus:outline-none"
+                className="w-full px-5 sm:px-6 py-5 sm:py-6 text-left flex items-center justify-between focus:outline-none"
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
               >
-                <span className={`text-lg font-semibold transition-colors duration-300 ${openIndex === index ? 'text-orange-500' : 'text-zinc-900'}`}>
+                <span className={`text-base sm:text-lg font-semibold pr-4 transition-colors duration-300 ${openIndex === index ? 'text-orange-500' : 'text-zinc-900'}`}>
                   {faq.question}
                 </span>
                 <ChevronDown 
@@ -72,7 +72,7 @@ export default function FAQ() {
                     exit={{ height: 0, opacity: 0 }}
                     transition={{ duration: 0.3, ease: "easeInOut" }}
                   >
-                    <div className="px-6 pb-6 pt-0 text-zinc-500 font-light leading-relaxed border-t border-zinc-100 mt-2">
+                    <div className="px-5 sm:px-6 pb-5 sm:pb-6 pt-4 text-sm sm:text-base text-zinc-500 font-light leading-relaxed border-t border-zinc-100">
                       {faq.answer}
                     </div>
                   </motion.div>

@@ -50,9 +50,12 @@ export default function Pathway() {
         </motion.div>
 
         <div className="relative">
+          {/* Desktop horizontal line */}
           <div className="hidden md:block absolute top-1/2 left-10 right-10 h-0.5 bg-zinc-100 -translate-y-1/2 z-0"></div>
+          {/* Mobile vertical line */}
+          <div className="md:hidden absolute left-1/2 top-10 bottom-10 w-0.5 bg-zinc-100 -translate-x-1/2 z-0"></div>
           
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8">
             {steps.map((step, index) => (
               <motion.div
                 key={index}
