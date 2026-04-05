@@ -50,11 +50,6 @@ export default function Pathway() {
         </motion.div>
 
         <div className="relative">
-          {/* Desktop horizontal line */}
-          <div className="hidden md:block absolute top-1/2 left-10 right-10 h-0.5 bg-zinc-100 -translate-y-1/2 z-0"></div>
-          {/* Mobile vertical line */}
-          <div className="md:hidden absolute left-1/2 top-10 bottom-10 w-0.5 bg-zinc-100 -translate-x-1/2 z-0"></div>
-          
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8">
             {steps.map((step, index) => (
               <motion.div
@@ -65,7 +60,13 @@ export default function Pathway() {
                 transition={{ duration: 0.6, delay: index * 0.2 }}
                 className="relative z-10 flex flex-col items-center text-center group"
               >
-                <div className="relative mb-8">
+                {/* Desktop horizontal connector line, hidden on the last item */}
+                {index < steps.length - 1 && (
+                  <div className="hidden md:block absolute top-10 left-[50%] w-[calc(100%+2rem)] h-0.5 bg-zinc-100 z-0"></div>
+                )}
+                
+                <div className="relative mb-8 flex items-center justify-center">
+                  <div className={`absolute -inset-4 bg-gradient-to-tr ${step.color} blur-xl opacity-40 group-hover:opacity-60 transition-opacity duration-500 rounded-full`}></div>
                   <div className={`w-20 h-20 rounded-full bg-white shadow-xl flex items-center justify-center border-4 border-white relative z-10 group-hover:scale-110 transition-transform duration-500`}>
                     <step.icon className={`w-8 h-8 text-transparent bg-clip-text fill-transparent stroke-zinc-700`} style={{ stroke: 'url(#gradient-' + index + ')' }} />
                     <svg width="0" height="0">
@@ -75,7 +76,6 @@ export default function Pathway() {
                       </linearGradient>
                     </svg>
                   </div>
-                  <div className={`absolute inset-0 bg-gradient-to-tr ${step.color} blur-lg opacity-40 group-hover:opacity-60 transition-opacity duration-500 scale-150 rounded-full -z-10`}></div>
                 </div>
                 
                 <h3 className="text-2xl font-bold text-zinc-900 mb-4">{step.title}</h3>
