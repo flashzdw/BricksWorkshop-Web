@@ -51,7 +51,7 @@ export default function About() {
           </h2>
           <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 lg:gap-24">
             <p className="text-lg sm:text-xl md:text-2xl text-zinc-500 font-light leading-relaxed flex-1">
-              卓越科技 BricksWorkshop 是中国西北地区首家 VEX 官方授权学苑。我们坐落于美丽的陕西汉中滨江路，不仅是一个学习机器人搭建与编程的地方，更是一个激发潜能、塑造未来创新者的前沿阵地。
+              卓越科技 VEX Academy 是中国西北地区首家 VEX 官方授权学苑。我们坐落于美丽的陕西汉中滨江路，不仅是一个学习机器人搭建与编程的地方，更是一个激发潜能、塑造未来创新者的前沿阵地。
             </p>
             <p className="text-base md:text-lg text-zinc-400 font-light leading-relaxed flex-1">
               我们坚信“在玩中学（Learning by doing）”的力量。在这个人工智能与机器人技术飞速发展的时代，让孩子尽早接触 VEX 机器人，不仅能锻炼逻辑思维与空间想象力，更能培养面对挫折时的韧性与团队协作精神。

@@ -2,6 +2,9 @@ import { motion } from 'framer-motion';
 import { useRef } from 'react';
 
 const images = [
+  "/gallery/10.jpeg",
+  "/gallery/11.jpeg",
+  "/gallery/12.jpeg",
   "/gallery/1.jpeg",
   "/gallery/2.jpeg",
   "/gallery/3.jpeg",
