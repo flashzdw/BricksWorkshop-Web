@@ -72,18 +72,26 @@ export default function Curriculum() {
   const [selectedCourse, setSelectedCourse] = useState<typeof courses[0] | null>(null);
 
   return (
-    <section id="curriculum" className="py-16 sm:py-24 lg:py-32 bg-zinc-50 relative overflow-hidden">
+    <section id="curriculum" className="py-20 sm:py-32 bg-white relative overflow-hidden">
+      {/* Decorative background elements */}
+      <div className="absolute top-1/4 -left-64 w-[40rem] h-[40rem] bg-gradient-to-br from-teal-50 to-transparent rounded-full blur-3xl opacity-60"></div>
+      <div className="absolute bottom-1/4 -right-64 w-[40rem] h-[40rem] bg-gradient-to-tl from-blue-50 to-transparent rounded-full blur-3xl opacity-60"></div>
+
       <div className="max-w-7xl mx-auto px-6 sm:px-8 relative z-10">
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8 }}
-          className="mb-12 sm:mb-24"
+          className="mb-16 sm:mb-24 text-center max-w-4xl mx-auto"
         >
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-zinc-900 mb-6 tracking-tight">
-            全生命周期 <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500">机器人教育体系</span>
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-100 text-zinc-600 text-sm font-medium mb-6">
+            <span className="w-2 h-2 rounded-full bg-teal-500"></span>
+            课程体系
+          </div>
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-zinc-900 mb-8 tracking-tight font-display">
+            全生命周期 <br className="sm:hidden" />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-cyan-500 to-blue-500">机器人教育体系</span>
           </h2>
           <p className="text-lg sm:text-xl text-zinc-500 font-light">
             我们提供与国际接轨的 VEX 课程，陪伴孩子从零开始的每一次突破。
@@ -98,7 +106,7 @@ export default function Curriculum() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
-              className="relative group rounded-3xl bg-white border border-zinc-100 overflow-hidden hover:shadow-2xl transition-shadow duration-500 flex flex-col cursor-default"
+              className="relative group rounded-[2.5rem] bg-white border border-zinc-100 hover:border-zinc-200 overflow-hidden hover:shadow-2xl hover:shadow-zinc-200/50 transition-all duration-500 flex flex-col cursor-default"
             >
               <div className="relative h-64 overflow-hidden">
                 <img 

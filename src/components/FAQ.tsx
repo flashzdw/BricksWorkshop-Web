@@ -25,17 +25,24 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="py-16 sm:py-24 lg:py-32 bg-zinc-50 relative">
-      <div className="max-w-4xl mx-auto px-6 sm:px-8">
+    <section id="faq" className="py-20 sm:py-32 bg-white relative overflow-hidden">
+      <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-zinc-200 to-transparent"></div>
+      <div className="absolute -left-[20rem] top-1/2 w-[40rem] h-[40rem] bg-gradient-to-r from-red-50 to-transparent rounded-full blur-3xl opacity-60 -translate-y-1/2 pointer-events-none"></div>
+
+      <div className="max-w-4xl mx-auto px-6 sm:px-8 relative z-10">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-12 sm:mb-16"
+          className="text-center mb-16 sm:mb-24"
         >
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-zinc-900 mb-6 tracking-tight">
-            家长<span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-500">关心的问题</span>
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-100 text-zinc-600 text-sm font-medium mb-6">
+            <span className="w-2 h-2 rounded-full bg-red-500"></span>
+            常见问题
+          </div>
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-zinc-900 mb-8 tracking-tight font-display">
+            家长<span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500">关心的问题</span>
           </h2>
           <p className="text-lg sm:text-xl text-zinc-500 font-light">
             我们整理了最常见的疑问，帮助您更好地了解卓越科技的教育体系。
@@ -50,7 +57,7 @@ export default function FAQ() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
-              className="bg-white border border-zinc-200 rounded-2xl overflow-hidden hover:border-orange-200 transition-colors duration-300"
+              className="bg-white border border-zinc-100 rounded-3xl overflow-hidden hover:border-red-200 hover:shadow-xl hover:shadow-red-500/5 transition-all duration-500"
             >
               <button
                 className="w-full px-4 sm:px-6 py-4 sm:py-6 text-left flex items-center justify-between focus:outline-none"

@@ -41,9 +41,10 @@ const stats = [
 
 export default function Statistics() {
   return (
-    <section className="py-24 bg-white relative z-10 border-y border-zinc-100">
+    <section className="py-24 sm:py-32 bg-white relative z-10">
+      <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-zinc-200 to-transparent"></div>
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 lg:gap-12 text-center">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-12 sm:gap-16 lg:gap-20 text-center">
           {stats.map((stat, index) => (
             <motion.div
               key={index}
@@ -51,13 +52,14 @@ export default function Statistics() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="flex flex-col items-center justify-center group"
+              className="flex flex-col items-center justify-center group relative"
             >
-              <div className={`text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4 text-transparent bg-clip-text bg-gradient-to-br ${stat.gradient} transition-transform duration-300 group-hover:scale-110`}>
+              <div className={`absolute inset-0 bg-gradient-to-tr ${stat.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-500 rounded-[2rem] blur-xl`}></div>
+              <div className={`text-5xl sm:text-6xl md:text-7xl font-extrabold mb-4 font-display text-transparent bg-clip-text bg-gradient-to-br ${stat.gradient} transition-transform duration-500 group-hover:scale-105`}>
                 <Counter from={0} to={stat.value} />
                 <span>{stat.suffix}</span>
               </div>
-              <p className="text-zinc-500 font-medium tracking-wider">{stat.label}</p>
+              <p className="text-zinc-500 font-medium tracking-wider text-sm sm:text-base uppercase">{stat.label}</p>
             </motion.div>
           ))}
         </div>

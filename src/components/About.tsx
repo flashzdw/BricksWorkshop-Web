@@ -36,30 +36,34 @@ const features = [
 
 export default function About() {
   return (
-    <section id="about" className="py-16 sm:py-24 lg:py-32 bg-white relative">
-      <div className="max-w-7xl mx-auto px-6 sm:px-8">
+    <section id="about" className="py-20 sm:py-32 bg-white relative overflow-hidden">
+      {/* Decorative Elements */}
+      <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-zinc-200 to-transparent"></div>
+      <div className="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-gradient-to-br from-purple-100 to-transparent opacity-50 blur-3xl"></div>
+      <div className="absolute -bottom-40 -left-40 w-96 h-96 rounded-full bg-gradient-to-tr from-blue-100 to-transparent opacity-50 blur-3xl"></div>
+
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 relative z-10">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8 }}
-          className="mb-12 sm:mb-20"
+          className="mb-16 sm:mb-24 text-center max-w-4xl mx-auto"
         >
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-zinc-900 mb-8 tracking-tight">
-            重新定义 <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500">青少年科技教育</span>
-          </h2>
-          <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 lg:gap-24">
-            <p className="text-lg sm:text-xl md:text-2xl text-zinc-500 font-light leading-relaxed flex-1">
-              卓越科技 BricksWorkshop 是中国西北地区首家 VEX 官方授权学苑。我们坐落于美丽的陕西汉中滨江路，不仅是一个学习机器人搭建与编程的地方，更是一个激发潜能、塑造未来创新者的前沿阵地。
-            </p>
-            <p className="text-base md:text-lg text-zinc-400 font-light leading-relaxed flex-1">
-              我们坚信“在玩中学（Learning by doing）”的力量。在这个人工智能与机器人技术飞速发展的时代，让孩子尽早接触 VEX 机器人，不仅能锻炼逻辑思维与空间想象力，更能培养面对挫折时的韧性与团队协作精神。
-            </p>
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-100 text-zinc-600 text-sm font-medium mb-6">
+            <span className="w-2 h-2 rounded-full bg-purple-500"></span>
+            关于我们
           </div>
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-zinc-900 mb-8 tracking-tight font-display">
+            重新定义 <br className="sm:hidden" />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500">青少年科技教育</span>
+          </h2>
+          <p className="text-lg sm:text-xl text-zinc-500 font-light leading-relaxed">
+            卓越科技 BricksWorkshop 是中国西北地区首家 VEX 官方授权学苑。我们坐落于美丽的陕西汉中滨江路，不仅是一个学习机器人搭建与编程的地方，更是一个激发潜能、塑造未来创新者的前沿阵地。坚信“在玩中学”的力量，让孩子尽早接触 VEX 机器人，锻炼逻辑思维与空间想象力。
+          </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-12 lg:gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {features.map((feature, index) => (
             <motion.div
               key={index}
@@ -67,13 +71,18 @@ export default function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="group"
+              className="group p-8 rounded-[2rem] bg-white border border-zinc-100 hover:border-zinc-200 hover:shadow-2xl hover:shadow-zinc-200/50 transition-all duration-500 relative overflow-hidden"
             >
-              <div className="mb-6 inline-flex p-4 rounded-2xl bg-zinc-50 group-hover:bg-gradient-to-br group-hover:from-pink-100 group-hover:to-orange-100 transition-colors duration-500">
-                <feature.icon className="w-8 h-8 text-zinc-700 group-hover:text-orange-500 transition-colors duration-500" strokeWidth={1.5} />
+              {/* Hover Gradient Background */}
+              <div className="absolute inset-0 bg-gradient-to-br from-zinc-50 to-white opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              
+              <div className="relative z-10">
+                <div className="mb-6 inline-flex p-4 rounded-2xl bg-zinc-50 group-hover:bg-white group-hover:shadow-md transition-all duration-500">
+                  <feature.icon className="w-7 h-7 text-zinc-700 group-hover:text-purple-500 transition-colors duration-500" strokeWidth={1.5} />
+                </div>
+                <h3 className="text-xl font-semibold text-zinc-900 mb-3">{feature.title}</h3>
+                <p className="text-zinc-500 leading-relaxed font-light text-sm sm:text-base">{feature.description}</p>
               </div>
-              <h3 className="text-2xl font-semibold text-zinc-900 mb-4">{feature.title}</h3>
-              <p className="text-zinc-500 leading-relaxed font-light">{feature.description}</p>
             </motion.div>
           ))}
         </div>

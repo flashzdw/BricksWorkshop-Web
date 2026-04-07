@@ -30,8 +30,9 @@ const steps = [
 
 export default function Pathway() {
   return (
-    <section id="pathway" className="py-16 sm:py-24 lg:py-32 bg-white relative overflow-hidden">
-      <div className="absolute top-1/2 left-0 w-96 h-96 bg-gradient-to-r from-blue-100 to-purple-100 rounded-full mix-blend-multiply filter blur-3xl opacity-50 -translate-y-1/2"></div>
+    <section id="pathway" className="py-20 sm:py-32 bg-white relative overflow-hidden">
+      <div className="absolute top-1/2 left-0 w-[40rem] h-[40rem] bg-gradient-to-r from-blue-50 to-purple-50 rounded-full mix-blend-multiply filter blur-3xl opacity-60 -translate-y-1/2"></div>
+      <div className="absolute top-0 right-0 w-[30rem] h-[30rem] bg-gradient-to-l from-orange-50 to-transparent rounded-full mix-blend-multiply filter blur-3xl opacity-60"></div>
       
       <div className="max-w-7xl mx-auto px-6 sm:px-8 relative z-10">
         <motion.div 
@@ -39,10 +40,14 @@ export default function Pathway() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16 sm:mb-24"
+          className="text-center mb-16 sm:mb-24 max-w-4xl mx-auto"
         >
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-zinc-900 mb-6 tracking-tight">
-            从<span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500">零基础</span>到世界舞台
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-100 text-zinc-600 text-sm font-medium mb-6">
+            <span className="w-2 h-2 rounded-full bg-blue-500"></span>
+            赛事路径
+          </div>
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-zinc-900 mb-8 tracking-tight font-display">
+            从<span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500">零基础</span>到世界舞台
           </h2>
           <p className="text-lg sm:text-xl text-zinc-500 font-light max-w-2xl mx-auto">
             清晰的进阶赛事规划，让孩子每一次的进步都能得到权威认证。
@@ -62,12 +67,12 @@ export default function Pathway() {
               >
                 {/* Desktop horizontal connector line, hidden on the last item */}
                 {index < steps.length - 1 && (
-                  <div className="hidden md:block absolute top-10 left-[50%] w-[calc(100%+2rem)] h-0.5 bg-zinc-100 z-0"></div>
+                  <div className="hidden md:block absolute top-10 left-[50%] w-[calc(100%+2rem)] h-0.5 bg-gradient-to-r from-zinc-100 to-zinc-200 z-0"></div>
                 )}
                 
                 <div className="relative mb-8 flex items-center justify-center">
-                  <div className={`absolute -inset-4 bg-gradient-to-tr ${step.color} blur-xl opacity-40 group-hover:opacity-60 transition-opacity duration-500 rounded-full -z-10 mix-blend-multiply`}></div>
-                  <div className={`w-20 h-20 rounded-full bg-white shadow-xl flex items-center justify-center border-4 border-white relative z-10 group-hover:scale-110 transition-transform duration-500`}>
+                  <div className={`absolute -inset-6 bg-gradient-to-tr ${step.color} blur-2xl opacity-20 group-hover:opacity-40 transition-opacity duration-500 rounded-full -z-10`}></div>
+                  <div className={`w-20 h-20 rounded-full bg-white shadow-lg flex items-center justify-center border border-zinc-100 relative z-10 group-hover:scale-110 transition-all duration-500 group-hover:border-zinc-200`}>
                     <step.icon className={`w-8 h-8 text-transparent bg-clip-text fill-transparent stroke-zinc-700`} style={{ stroke: 'url(#gradient-' + index + ')' }} />
                     <svg width="0" height="0">
                       <linearGradient id={"gradient-" + index} x1="0%" y1="0%" x2="100%" y2="100%">
@@ -78,8 +83,8 @@ export default function Pathway() {
                   </div>
                 </div>
                 
-                <h3 className="text-2xl font-bold text-zinc-900 mb-4">{step.title}</h3>
-                <p className="text-zinc-500 font-light leading-relaxed">{step.desc}</p>
+                <h3 className="text-2xl font-semibold text-zinc-900 mb-4">{step.title}</h3>
+                <p className="text-zinc-500 font-light leading-relaxed text-sm sm:text-base">{step.desc}</p>
               </motion.div>
             ))}
           </div>
