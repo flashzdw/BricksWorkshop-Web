@@ -62,13 +62,13 @@ export default function Pathway() {
               >
                 {/* Desktop horizontal connector line, hidden on the last item */}
                 {index < steps.length - 1 && (
-                  <div className="hidden md:block absolute top-10 left-[50%] w-[calc(100%+2rem)] h-0.5 bg-zinc-100 z-0"></div>
+                  <div className="hidden md:block absolute top-14 left-[50%] w-[calc(100%+2rem)] h-0.5 bg-zinc-100 z-0"></div>
                 )}
                 
                 <div className="relative mb-8 flex items-center justify-center">
-                  <div className={`absolute -inset-4 bg-gradient-to-tr ${step.color} blur-xl opacity-40 group-hover:opacity-60 transition-opacity duration-500 rounded-full -z-10 mix-blend-multiply`}></div>
-                  <div className={`w-20 h-20 rounded-full bg-white shadow-xl flex items-center justify-center border-4 border-white relative z-10 group-hover:scale-110 transition-transform duration-500`}>
-                    <step.icon className={`w-8 h-8 text-transparent bg-clip-text fill-transparent stroke-zinc-700`} style={{ stroke: 'url(#gradient-' + index + ')' }} />
+                  <div className={`absolute -inset-4 bg-gradient-to-tr ${step.color} blur-xl opacity-40 group-hover:opacity-60 transition-opacity duration-500 rounded-3xl -z-10 mix-blend-multiply`}></div>
+                  <div className={`w-28 h-28 rounded-3xl bg-white shadow-xl flex items-center justify-center border-4 border-white relative z-10 group-hover:scale-110 transition-transform duration-500`}>
+                    <step.icon className={`w-12 h-12 text-transparent bg-clip-text fill-transparent stroke-zinc-700`} style={{ stroke: 'url(#gradient-' + index + ')' }} />
                     <svg width="0" height="0">
                       <linearGradient id={"gradient-" + index} x1="0%" y1="0%" x2="100%" y2="100%">
                         <stop offset="0%" stopColor="var(--tw-gradient-from)" className={step.color.split(' ')[0].replace('from-', 'text-')} />
