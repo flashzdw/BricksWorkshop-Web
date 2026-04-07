@@ -62,9 +62,9 @@ export default function Pathway() {
               >
                 
                 <div className="flex items-center mb-4 gap-4">
-                    <div className="relative flex items-center justify-center shrink-0">
-                        <div className={`absolute -inset-3 bg-gradient-to-tr ${step.color} blur-xl opacity-50 group-hover:opacity-80 transition-opacity duration-500 rounded-xl`}></div>
-                        <div className={`w-12 h-12 rounded-xl bg-white shadow-md flex items-center justify-center border-2 border-white relative z-10 group-hover:scale-105 transition-transform duration-300`}>
+                  <div className="relative flex items-center justify-center shrink-0 w-12 h-12">
+                    <div className={`absolute -inset-3 bg-gradient-to-tr ${step.color} blur-xl opacity-50 group-hover:opacity-80 transition-opacity duration-500 rounded-xl z-0`}></div>
+                    <div className={`w-12 h-12 rounded-xl bg-white shadow-md flex items-center justify-center border-2 border-white relative z-10`}>
                       <step.icon className={`w-6 h-6 text-transparent bg-clip-text fill-transparent stroke-zinc-700`} style={{ stroke: 'url(#gradient-' + index + ')' }} />
                       <svg width="0" height="0">
                         <linearGradient id={"gradient-" + index} x1="0%" y1="0%" x2="100%" y2="100%">
