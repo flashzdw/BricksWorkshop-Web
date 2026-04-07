@@ -20,7 +20,7 @@ export default function Navbar() {
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-zinc-100"
+      className="fixed top-0 left-0 right-0 z-50 bg-white/60 backdrop-blur-lg border-b border-zinc-100/50"
     >
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
         <div className="flex items-center justify-between h-20">
@@ -61,7 +61,7 @@ export default function Navbar() {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden bg-white border-b border-zinc-100 overflow-hidden"
+            className="md:hidden bg-white/60 backdrop-blur-lg border-b border-zinc-100/50 overflow-hidden"
           >
             <div className="px-4 pt-2 pb-6 space-y-1 shadow-lg">
               {links.map((link) => (
