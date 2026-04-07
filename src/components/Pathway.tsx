@@ -58,27 +58,25 @@ export default function Pathway() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
-                className="relative z-10 flex flex-col items-center text-center group"
+                className="relative z-10 flex flex-col group"
               >
-                {/* Desktop horizontal connector line, hidden on the last item */}
-                {index < steps.length - 1 && (
-                  <div className="hidden md:block absolute top-10 left-[50%] w-[calc(100%+2rem)] h-0.5 bg-zinc-100 z-0"></div>
-                )}
                 
-                <div className="relative mb-8 flex items-center justify-center">
-                  <div className={`absolute -inset-4 bg-gradient-to-tr ${step.color} blur-xl opacity-40 group-hover:opacity-60 transition-opacity duration-500 rounded-full -z-10 mix-blend-multiply`}></div>
-                  <div className={`w-20 h-20 rounded-full bg-white shadow-xl flex items-center justify-center border-4 border-white relative z-10 group-hover:scale-110 transition-transform duration-500`}>
-                    <step.icon className={`w-8 h-8 text-transparent bg-clip-text fill-transparent stroke-zinc-700`} style={{ stroke: 'url(#gradient-' + index + ')' }} />
-                    <svg width="0" height="0">
-                      <linearGradient id={"gradient-" + index} x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stopColor="var(--tw-gradient-from)" className={step.color.split(' ')[0].replace('from-', 'text-')} />
-                        <stop offset="100%" stopColor="var(--tw-gradient-to)" className={step.color.split(' ')[1].replace('to-', 'text-')} />
-                      </linearGradient>
-                    </svg>
+                <div className="flex items-center mb-4 gap-4">
+                  <div className="relative flex items-center justify-center shrink-0 w-12 h-12">
+                    <div className={`absolute -inset-3 bg-gradient-to-tr ${step.color} blur-xl opacity-50 group-hover:opacity-80 transition-opacity duration-500 rounded-xl z-0`}></div>
+                    <div className={`w-12 h-12 rounded-xl bg-white shadow-md flex items-center justify-center border-2 border-white relative z-10`}>
+                      <step.icon className={`w-6 h-6 text-transparent bg-clip-text fill-transparent stroke-zinc-700`} style={{ stroke: 'url(#gradient-' + index + ')' }} />
+                      <svg width="0" height="0">
+                        <linearGradient id={"gradient-" + index} x1="0%" y1="0%" x2="100%" y2="100%">
+                          <stop offset="0%" stopColor="var(--tw-gradient-from)" className={step.color.split(' ')[0].replace('from-', 'text-')} />
+                          <stop offset="100%" stopColor="var(--tw-gradient-to)" className={step.color.split(' ')[1].replace('to-', 'text-')} />
+                        </linearGradient>
+                      </svg>
+                    </div>
                   </div>
+                  <h3 className="text-2xl font-bold text-zinc-900">{step.title}</h3>
                 </div>
                 
-                <h3 className="text-2xl font-bold text-zinc-900 mb-4">{step.title}</h3>
                 <p className="text-zinc-500 font-light leading-relaxed">{step.desc}</p>
               </motion.div>
             ))}

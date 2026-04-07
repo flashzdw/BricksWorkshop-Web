@@ -17,15 +17,15 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
         >
-          <h1 className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-extrabold tracking-tighter text-zinc-900 mb-6 flex flex-col items-center justify-center gap-6 sm:flex-row sm:gap-8">
+          <h1 className="text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-extrabold tracking-tighter text-zinc-900 mb-6 flex flex-col items-center justify-center gap-6 sm:flex-row sm:gap-8">
             <span>Bricks<span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-yellow-500 to-blue-500">Workshop</span></span>
           </h1>
           <p className="text-lg sm:text-xl md:text-2xl text-zinc-500 font-light max-w-2xl mx-auto mb-12">
             专注力与创造力的起点。西北首家 VEX 学苑，探索未来科技的无限可能。
           </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-             <a href="#curriculum" className="w-full sm:w-auto px-8 py-4 bg-zinc-900 text-white rounded-full font-medium hover:bg-zinc-800 transition-colors shadow-xl shadow-zinc-900/20">探索课程</a>
-             <a href="#about" className="w-full sm:w-auto px-8 py-4 bg-white text-zinc-900 border border-zinc-200 rounded-full font-medium hover:bg-zinc-50 transition-colors">了解我们</a>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+             <a href="#curriculum" className="w-56 sm:w-auto text-center px-8 py-4 bg-zinc-900 text-white rounded-full font-medium hover:bg-zinc-800 transition-colors shadow-xl shadow-zinc-900/20">探索课程</a>
+             <a href="#about" className="w-56 sm:w-auto text-center px-8 py-4 bg-white text-zinc-900 border border-zinc-200 rounded-full font-medium hover:bg-zinc-50 transition-colors">了解我们</a>
           </div>
         </motion.div>
       </div>
