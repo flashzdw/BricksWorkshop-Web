@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Award, Trophy, Star, ShieldCheck } from 'lucide-react';
+import { Timeline } from '@/components/ui/timeline';
 
 const steps = [
   {
@@ -29,6 +30,36 @@ const steps = [
 ];
 
 export default function Pathway() {
+  const data = steps.map((step, index) => ({
+    title: step.title,
+    content: (
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-50px" }}
+        transition={{ duration: 0.6, delay: index * 0.2 }}
+        className="relative z-10 flex flex-col group mb-10"
+      >
+        <div className="flex items-center mb-4 gap-4">
+          <div className="relative flex items-center justify-center shrink-0 w-12 h-12">
+            <div className={`absolute -inset-3 bg-gradient-to-tr ${step.color} blur-xl opacity-50 group-hover:opacity-80 transition-opacity duration-500 rounded-xl z-0`}></div>
+            <div className={`w-12 h-12 rounded-xl bg-white shadow-md flex items-center justify-center border-2 border-white relative z-10`}>
+              <step.icon className={`w-6 h-6 text-transparent bg-clip-text fill-transparent stroke-zinc-700`} style={{ stroke: 'url(#gradient-' + index + ')' }} />
+              <svg width="0" height="0">
+                <linearGradient id={"gradient-" + index} x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stopColor="var(--tw-gradient-from)" className={step.color.split(' ')[0].replace('from-', 'text-')} />
+                  <stop offset="100%" stopColor="var(--tw-gradient-to)" className={step.color.split(' ')[1].replace('to-', 'text-')} />
+                </linearGradient>
+              </svg>
+            </div>
+          </div>
+        </div>
+        
+        <p className="text-zinc-500 font-light leading-relaxed text-lg">{step.desc}</p>
+      </motion.div>
+    )
+  }));
+
   return (
     <section id="pathway" className="py-16 sm:py-24 lg:py-32 bg-white relative overflow-hidden">
       <div className="absolute top-1/2 left-0 w-96 h-96 bg-gradient-to-r from-blue-100 to-purple-100 rounded-full mix-blend-multiply filter blur-3xl opacity-50 -translate-y-1/2"></div>
@@ -49,39 +80,7 @@ export default function Pathway() {
           </p>
         </motion.div>
 
-        <div className="relative">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8">
-            {steps.map((step, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-50px" }}
-                transition={{ duration: 0.6, delay: index * 0.2 }}
-                className="relative z-10 flex flex-col group"
-              >
-                
-                <div className="flex items-center mb-4 gap-4">
-                  <div className="relative flex items-center justify-center shrink-0 w-12 h-12">
-                    <div className={`absolute -inset-3 bg-gradient-to-tr ${step.color} blur-xl opacity-50 group-hover:opacity-80 transition-opacity duration-500 rounded-xl z-0`}></div>
-                    <div className={`w-12 h-12 rounded-xl bg-white shadow-md flex items-center justify-center border-2 border-white relative z-10`}>
-                      <step.icon className={`w-6 h-6 text-transparent bg-clip-text fill-transparent stroke-zinc-700`} style={{ stroke: 'url(#gradient-' + index + ')' }} />
-                      <svg width="0" height="0">
-                        <linearGradient id={"gradient-" + index} x1="0%" y1="0%" x2="100%" y2="100%">
-                          <stop offset="0%" stopColor="var(--tw-gradient-from)" className={step.color.split(' ')[0].replace('from-', 'text-')} />
-                          <stop offset="100%" stopColor="var(--tw-gradient-to)" className={step.color.split(' ')[1].replace('to-', 'text-')} />
-                        </linearGradient>
-                      </svg>
-                    </div>
-                  </div>
-                  <h3 className="text-2xl font-bold text-zinc-900">{step.title}</h3>
-                </div>
-                
-                <p className="text-zinc-500 font-light leading-relaxed">{step.desc}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
+        <Timeline data={data} />
       </div>
     </section>
   );

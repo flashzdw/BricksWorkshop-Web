@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Target, Lightbulb, Rocket, Users, ShieldCheck, MapPin } from 'lucide-react';
+import { HoverEffect } from './ui/card-hover-effect';
 
 const features = [
   {
@@ -59,24 +60,14 @@ export default function About() {
           </div>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-12 lg:gap-16">
-          {features.map((feature, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="group"
-            >
-              <div className="mb-6 inline-flex p-4 rounded-2xl bg-zinc-50 group-hover:bg-gradient-to-br group-hover:from-pink-100 group-hover:to-orange-100 transition-colors duration-500">
-                <feature.icon className="w-8 h-8 text-zinc-700 group-hover:text-orange-500 transition-colors duration-500" strokeWidth={1.5} />
-              </div>
-              <h3 className="text-2xl font-semibold text-zinc-900 mb-4">{feature.title}</h3>
-              <p className="text-zinc-500 leading-relaxed font-light">{feature.description}</p>
-            </motion.div>
-          ))}
-        </div>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.6 }}
+        >
+          <HoverEffect items={features} className="gap-8 sm:gap-12 lg:gap-16 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-0" />
+        </motion.div>
       </div>
     </section>
   );
