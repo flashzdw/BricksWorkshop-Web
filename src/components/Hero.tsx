@@ -11,13 +11,13 @@ export default function Hero() {
         <div className="absolute bottom-1/4 left-1/2 w-64 h-64 sm:w-96 sm:h-96 bg-gradient-to-r from-blue-300 via-cyan-200 to-teal-300 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-4000"></div>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 text-center pt-8 sm:pt-0">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 md:px-8 text-center pt-8 sm:pt-0">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
         >
-          <h1 className="text-[13vw] sm:text-6xl md:text-8xl lg:text-9xl font-extrabold tracking-tighter text-zinc-900 mb-6 leading-tight sm:leading-none whitespace-nowrap">
+          <h1 className="text-[10vw] sm:text-6xl md:text-8xl lg:text-9xl font-extrabold tracking-tighter text-zinc-900 mb-6 leading-tight sm:leading-none whitespace-nowrap">
             <span>Bricks<span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-yellow-500 to-blue-500 pr-2 pb-1">Workshop</span></span>
           </h1>
           <p className="text-lg sm:text-xl md:text-2xl text-zinc-500 font-light max-w-2xl mx-auto mb-12">
