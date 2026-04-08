@@ -17,7 +17,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
         >
-          <h1 className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-extrabold tracking-tighter text-zinc-900 mb-6">
+          <h1 className="text-[11vw] leading-none sm:text-6xl md:text-8xl lg:text-9xl font-extrabold tracking-tighter text-zinc-900 mb-6">
             <span>Bricks<span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-yellow-500 to-blue-500 pr-2 pb-1">Workshop</span></span>
           </h1>
           <p className="text-lg sm:text-xl md:text-2xl text-zinc-500 font-light max-w-2xl mx-auto mb-12">
