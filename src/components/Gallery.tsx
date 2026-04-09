@@ -41,26 +41,26 @@ export default function Gallery() {
         </motion.div>
       </div>
 
-      <div className="w-full flex flex-col gap-6 sm:gap-8 group">
+      <div className="w-full flex flex-col gap-6 sm:gap-8">
         {/* Row 1: Scrolling Left */}
         <div className="relative w-full overflow-hidden flex">
-          <div className="flex animate-marquee-left group-hover:[animation-play-state:paused] gap-6 sm:gap-8 min-w-max pr-6 sm:pr-8">
+          <div className="flex animate-marquee-left gap-6 sm:gap-8 min-w-max pr-6 sm:pr-8">
             {marqueeItems1.map((src, i) => (
               <div 
                 key={`row1-a-${i}`} 
                 className="relative aspect-[4/3] w-56 sm:w-72 md:w-80 overflow-hidden rounded-3xl bg-zinc-200 flex-shrink-0"
               >
-                <img src={src} alt={`课堂风采上 ${i + 1}`} loading="lazy" className="w-full h-full object-cover" />
+                <img src={src} alt={`课堂风采上 ${i + 1}`} loading="lazy" className="w-full h-full object-cover pointer-events-none" />
               </div>
             ))}
           </div>
-          <div className="flex animate-marquee-left group-hover:[animation-play-state:paused] gap-6 sm:gap-8 min-w-max pr-6 sm:pr-8">
+          <div className="flex animate-marquee-left gap-6 sm:gap-8 min-w-max pr-6 sm:pr-8">
             {marqueeItems1.map((src, i) => (
               <div 
                 key={`row1-b-${i}`} 
                 className="relative aspect-[4/3] w-56 sm:w-72 md:w-80 overflow-hidden rounded-3xl bg-zinc-200 flex-shrink-0"
               >
-                <img src={src} alt={`课堂风采上 ${i + 1}`} loading="lazy" className="w-full h-full object-cover" />
+                <img src={src} alt={`课堂风采上 ${i + 1}`} loading="lazy" className="w-full h-full object-cover pointer-events-none" />
               </div>
             ))}
           </div>
@@ -68,23 +68,23 @@ export default function Gallery() {
 
         {/* Row 2: Scrolling Right */}
         <div className="relative w-full overflow-hidden flex">
-          <div className="flex animate-marquee-right group-hover:[animation-play-state:paused] gap-6 sm:gap-8 min-w-max pr-6 sm:pr-8">
+          <div className="flex animate-marquee-right gap-6 sm:gap-8 min-w-max pr-6 sm:pr-8">
             {marqueeItems2.map((src, i) => (
               <div 
                 key={`row2-a-${i}`} 
                 className="relative aspect-[4/3] w-56 sm:w-72 md:w-80 overflow-hidden rounded-3xl bg-zinc-200 flex-shrink-0"
               >
-                <img src={src} alt={`课堂风采下 ${i + 1}`} loading="lazy" className="w-full h-full object-cover" />
+                <img src={src} alt={`课堂风采下 ${i + 1}`} loading="lazy" className="w-full h-full object-cover pointer-events-none" />
               </div>
             ))}
           </div>
-          <div className="flex animate-marquee-right group-hover:[animation-play-state:paused] gap-6 sm:gap-8 min-w-max pr-6 sm:pr-8">
+          <div className="flex animate-marquee-right gap-6 sm:gap-8 min-w-max pr-6 sm:pr-8">
             {marqueeItems2.map((src, i) => (
               <div 
                 key={`row2-b-${i}`} 
                 className="relative aspect-[4/3] w-56 sm:w-72 md:w-80 overflow-hidden rounded-3xl bg-zinc-200 flex-shrink-0"
               >
-                <img src={src} alt={`课堂风采下 ${i + 1}`} loading="lazy" className="w-full h-full object-cover" />
+                <img src={src} alt={`课堂风采下 ${i + 1}`} loading="lazy" className="w-full h-full object-cover pointer-events-none" />
               </div>
             ))}
           </div>
