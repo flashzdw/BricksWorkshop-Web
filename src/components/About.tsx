@@ -47,7 +47,7 @@ export default function About() {
         >
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-zinc-900 mb-8 tracking-tight">
             重新定义 <br />
-            <span className="text-zinc-900">青少年科技教育</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-yellow-500 to-blue-500">青少年科技教育</span>
           </h2>
           <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 lg:gap-24">
             <p className="text-lg sm:text-xl md:text-2xl text-zinc-600 font-light leading-relaxed flex-1">

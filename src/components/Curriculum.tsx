@@ -79,7 +79,7 @@ export default function Curriculum() {
           className="mb-24 sm:mb-32 text-center"
         >
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-zinc-900 mb-6 tracking-tighter">
-            全生命周期<br className="sm:hidden" />机器人教育体系
+            全生命周期<br className="sm:hidden" /><span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-yellow-500 to-blue-500">机器人教育</span>体系
           </h2>
           <p className="text-xl text-zinc-500 font-light max-w-2xl mx-auto">
             我们提供与国际接轨的 VEX 课程，陪伴孩子从零开始的每一次突破。

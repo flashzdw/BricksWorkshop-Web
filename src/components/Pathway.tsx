@@ -31,7 +31,7 @@ export default function Pathway() {
           className="text-center mb-24 sm:mb-32"
         >
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-zinc-900 mb-6 tracking-tighter">
-            从零基础到世界舞台
+            从零基础到<span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-yellow-500 to-blue-500">世界舞台</span>
           </h2>
           <p className="text-xl text-zinc-500 font-light max-w-2xl mx-auto">
             清晰的进阶赛事规划，让孩子每一次的进步都能得到权威认证。

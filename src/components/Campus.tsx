@@ -21,7 +21,7 @@ export default function Campus() {
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
         >
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-semibold text-zinc-900 mb-6 tracking-tight">
-            校区环境
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-yellow-500 to-blue-500">校区</span>环境
           </h2>
           <p className="text-xl sm:text-2xl text-zinc-500 font-normal max-w-3xl mx-auto">
             沉浸式的创造空间。<br className="hidden sm:block" />
@@ -31,7 +31,7 @@ export default function Campus() {
       </div>
 
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
           {images.map((src, i) => (
             <motion.div
               key={i}
@@ -39,7 +39,7 @@ export default function Campus() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: i * 0.1, ease: [0.16, 1, 0.3, 1] }}
-              className="relative aspect-[4/3] w-full overflow-hidden rounded-[2rem] bg-zinc-100"
+              className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl sm:rounded-3xl bg-zinc-100"
             >
               <img
                 src={src}

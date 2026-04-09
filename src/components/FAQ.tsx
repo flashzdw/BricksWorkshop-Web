@@ -35,7 +35,7 @@ export default function FAQ() {
           className="text-center mb-16 sm:mb-24"
         >
           <h2 className="text-4xl sm:text-5xl font-semibold text-zinc-900 mb-6 tracking-tight">
-            常见问题
+            常见<span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-yellow-500 to-blue-500">问题</span>
           </h2>
           <p className="text-xl text-zinc-500 font-normal">
             为您解答关于卓越科技教育体系的疑问
