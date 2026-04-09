@@ -165,7 +165,7 @@ export default function Curriculum() {
                   <X className="w-5 h-5" />
                 </button>
 
-                <div className="w-full md:w-2/5 h-64 sm:h-auto bg-[#F5F5F7] flex-shrink-0 flex items-center justify-center p-8">
+                <div className="w-full md:w-2/5 h-48 sm:h-auto bg-[#F5F5F7] flex-shrink-0 flex items-center justify-center p-6 sm:p-8">
                   <img
                     src={selectedCourse.image}
                     alt={selectedCourse.name}
