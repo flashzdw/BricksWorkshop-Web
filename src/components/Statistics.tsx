@@ -33,10 +33,10 @@ function Counter({ from, to, duration = 2 }: { from: number; to: number; duratio
 }
 
 const stats = [
-  { value: 500, suffix: '+', label: '服务学员', gradient: 'from-orange-400 to-red-500' },
-  { value: 50, suffix: '+', label: '荣获奖项', gradient: 'from-purple-400 to-pink-500' },
-  { value: 10, suffix: '+', label: '合作学校', gradient: 'from-teal-400 to-blue-500' },
-  { value: 100, suffix: '%', label: '专注投入', gradient: 'from-yellow-400 to-orange-500' },
+  { value: 500, suffix: '+', label: '服务学员' },
+  { value: 50, suffix: '+', label: '荣获奖项' },
+  { value: 10, suffix: '+', label: '合作学校' },
+  { value: 100, suffix: '%', label: '专注投入' },
 ];
 
 export default function Statistics() {
@@ -51,13 +51,13 @@ export default function Statistics() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="flex flex-col items-center justify-center group"
+              className="flex flex-col items-center justify-center"
             >
-              <div className={`text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4 text-transparent bg-clip-text bg-gradient-to-br ${stat.gradient} transition-transform duration-300 group-hover:scale-110`}>
+              <div className="text-5xl sm:text-6xl md:text-7xl font-semibold tracking-tighter text-blue-600 mb-3">
                 <Counter from={0} to={stat.value} />
                 <span>{stat.suffix}</span>
               </div>
-              <p className="text-zinc-500 font-medium tracking-wider">{stat.label}</p>
+              <p className="text-sm sm:text-base text-zinc-400 font-medium">{stat.label}</p>
             </motion.div>
           ))}
         </div>

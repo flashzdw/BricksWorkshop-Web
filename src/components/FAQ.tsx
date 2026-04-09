@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
-import { ChevronDown } from 'lucide-react';
+import { Plus } from 'lucide-react';
 
 const faqs = [
   {
@@ -25,60 +25,58 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="py-16 sm:py-24 lg:py-32 bg-zinc-50 relative">
-      <div className="max-w-4xl mx-auto px-6 sm:px-8">
+    <section id="faq" className="py-24 sm:py-32 bg-white">
+      <div className="max-w-3xl mx-auto px-6 sm:px-8">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="text-center mb-12 sm:mb-16"
+          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+          className="text-center mb-16 sm:mb-24"
         >
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-zinc-900 mb-6 tracking-tight">
-            家长<span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-500">关心的问题</span>
+          <h2 className="text-4xl sm:text-5xl font-semibold text-zinc-900 mb-6 tracking-tight">
+            常见<span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-yellow-500 to-blue-500">问题</span>
           </h2>
-          <p className="text-lg sm:text-xl text-zinc-500 font-light">
-            我们整理了最常见的疑问，帮助您更好地了解卓越科技的教育体系。
+          <p className="text-xl text-zinc-500 font-normal">
+            为您解答关于卓越科技教育体系的疑问
           </p>
         </motion.div>
 
-        <div className="space-y-4">
+        <div className="border-t border-zinc-200">
           {faqs.map((faq, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: index * 0.1 }}
-              className="bg-white border border-zinc-200 rounded-2xl overflow-hidden hover:border-orange-200 transition-colors duration-300"
-            >
+            <div key={index} className="border-b border-zinc-200">
               <button
-                className="w-full px-4 sm:px-6 py-4 sm:py-6 text-left flex items-center justify-between focus:outline-none"
+                className="w-full py-6 text-left flex items-center justify-between focus:outline-none group"
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
               >
-                <span className={`text-base sm:text-lg font-semibold pr-4 transition-colors duration-300 ${openIndex === index ? 'text-orange-500' : 'text-zinc-900'}`}>
+                <span className={`text-lg sm:text-xl font-medium pr-8 transition-colors duration-300 ${openIndex === index ? 'text-zinc-900' : 'text-zinc-600 group-hover:text-zinc-900'}`}>
                   {faq.question}
                 </span>
-                <ChevronDown 
-                  className={`w-5 h-5 text-zinc-400 shrink-0 transition-transform duration-300 ${openIndex === index ? 'rotate-180 text-orange-500' : ''}`} 
-                />
+                <motion.div
+                  animate={{ rotate: openIndex === index ? 45 : 0 }}
+                  transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
+                  className="flex-shrink-0 text-zinc-400 group-hover:text-zinc-900 transition-colors duration-300"
+                >
+                  <Plus className="w-6 h-6" />
+                </motion.div>
               </button>
               
-              <AnimatePresence>
+              <AnimatePresence initial={false}>
                 {openIndex === index && (
                   <motion.div
                     initial={{ height: 0, opacity: 0 }}
                     animate={{ height: "auto", opacity: 1 }}
                     exit={{ height: 0, opacity: 0 }}
-                    transition={{ duration: 0.3, ease: "easeInOut" }}
+                    transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
+                    className="overflow-hidden"
                   >
-                    <div className="px-4 sm:px-6 pb-4 sm:pb-6 pt-3 sm:pt-4 text-sm sm:text-base text-zinc-500 font-light leading-relaxed border-t border-zinc-100">
+                    <div className="pb-8 pr-12 text-base sm:text-lg text-zinc-500 font-normal leading-relaxed">
                       {faq.answer}
                     </div>
                   </motion.div>
                 )}
               </AnimatePresence>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

@@ -4,28 +4,21 @@ import { Mouse } from 'lucide-react';
 export default function Hero() {
   return (
     <section id="hero" className="relative min-h-screen flex flex-col items-center justify-center bg-white overflow-hidden">
-      {/* Background Subtle Gradient */}
-      <div className="absolute inset-0 z-0 opacity-20 pointer-events-none">
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 sm:w-96 sm:h-96 bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400 rounded-full mix-blend-multiply filter blur-3xl animate-blob"></div>
-        <div className="absolute top-1/3 right-1/4 w-64 h-64 sm:w-96 sm:h-96 bg-gradient-to-r from-yellow-200 via-green-200 to-emerald-300 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-2000"></div>
-        <div className="absolute bottom-1/4 left-1/2 w-64 h-64 sm:w-96 sm:h-96 bg-gradient-to-r from-blue-300 via-cyan-200 to-teal-300 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-4000"></div>
-      </div>
-
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 md:px-8 text-center pt-8 sm:pt-0">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
         >
-          <h1 className="text-[10vw] sm:text-6xl md:text-8xl lg:text-9xl font-extrabold tracking-tighter text-zinc-900 mb-6 leading-tight sm:leading-none whitespace-nowrap">
-            <span>Bricks<span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-yellow-500 to-blue-500 pr-2 pb-1">Workshop</span></span>
+          <h1 className="text-5xl sm:text-7xl md:text-9xl font-bold tracking-tighter mb-6 leading-tight sm:leading-none whitespace-nowrap">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-yellow-500 to-blue-500">BricksWorkshop</span>
           </h1>
-          <p className="text-lg sm:text-xl md:text-2xl text-zinc-500 font-light max-w-2xl mx-auto mb-12">
-            专注力与创造力的起点。西北首家 VEX 学苑，探索未来科技的无限可能。
+          <p className="text-xl sm:text-2xl md:text-3xl text-zinc-500 font-medium max-w-3xl mx-auto mb-12 tracking-tight">
+            专注力与创造力的起点。<br className="hidden sm:block" />西北首家 VEX 学苑，探索未来科技的无限可能。
           </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-             <a href="#curriculum" className="w-56 sm:w-auto text-center px-8 py-4 bg-zinc-900 text-white rounded-full font-medium hover:bg-zinc-800 transition-colors shadow-xl shadow-zinc-900/20">探索课程</a>
-             <a href="#about" className="w-56 sm:w-auto text-center px-8 py-4 bg-white text-zinc-900 border border-zinc-200 rounded-full font-medium hover:bg-zinc-50 transition-colors">了解我们</a>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
+             <a href="#curriculum" className="w-56 sm:w-auto text-center px-8 py-3 bg-black text-white rounded-full text-lg font-medium hover:bg-zinc-800 transition-colors">探索课程</a>
+             <a href="#about" className="w-56 sm:w-auto text-center px-8 py-3 bg-white text-black border border-zinc-300 rounded-full text-lg font-medium hover:bg-zinc-50 transition-colors">了解我们</a>
           </div>
         </motion.div>
       </div>
