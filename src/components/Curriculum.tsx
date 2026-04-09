@@ -144,52 +144,48 @@ export default function Curriculum() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={() => setSelectedCourse(null)}
-              className="fixed inset-0 z-50 bg-black/40 backdrop-blur-md"
+              className="fixed inset-0 z-50 bg-black/20 backdrop-blur-md"
             />
             <motion.div
-              initial={{ opacity: 0, y: 50, scale: 0.95 }}
-              animate={{ opacity: 1, y: 0, scale: 1 }}
-              exit={{ opacity: 0, y: 50, scale: 0.95 }}
-              transition={{ type: "spring", bounce: 0, duration: 0.4 }}
-              className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 pointer-events-none"
+              initial={{ opacity: 0, y: "100%" }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: "100%" }}
+              transition={{ type: "spring", damping: 25, stiffness: 200 }}
+              className="fixed inset-x-0 top-0 h-[100dvh] z-50 flex items-end sm:items-center justify-center p-0 sm:p-6 pointer-events-none"
             >
-              <div className="bg-white rounded-2xl overflow-hidden w-full max-w-4xl max-h-[90vh] flex flex-col md:flex-row pointer-events-auto relative shadow-2xl">
+              <div className="bg-white rounded-t-[32px] sm:rounded-[32px] overflow-hidden w-full max-w-2xl max-h-[90dvh] flex flex-col pointer-events-auto relative shadow-2xl">
+                
+                {/* Mobile drag indicator */}
+                <div className="absolute top-3 left-1/2 -translate-x-1/2 w-12 h-1.5 bg-zinc-200 rounded-full sm:hidden z-20" />
+
                 <button
                   onClick={() => setSelectedCourse(null)}
-                  className="absolute top-4 right-4 z-10 p-2 text-zinc-500 hover:text-zinc-900 transition-colors bg-white/50 backdrop-blur-sm rounded-full"
+                  className="absolute top-4 right-4 z-20 p-2 text-zinc-500 hover:text-zinc-900 transition-colors bg-zinc-100 hover:bg-zinc-200 rounded-full"
                 >
-                  <X className="w-6 h-6" />
+                  <X className="w-5 h-5" />
                 </button>
 
-                <div className="w-full md:w-2/5 h-64 md:h-auto bg-zinc-50 flex-shrink-0">
-                  <img
-                    src={selectedCourse.image}
-                    alt={selectedCourse.name}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-
-                <div className="w-full md:w-3/5 p-8 sm:p-12 overflow-y-auto custom-scrollbar">
-                  <div className="mb-8">
+                <div className="w-full p-6 pt-12 sm:p-12 overflow-y-auto custom-scrollbar flex flex-col gap-8 pb-10">
+                  <div>
                     <span className="text-xs font-semibold tracking-widest text-zinc-400 uppercase mb-2 block">
                       {selectedCourse.age}
                     </span>
-                    <h3 className={`text-3xl sm:text-4xl font-bold tracking-tighter mb-4 ${selectedCourse.colorClass}`}>
+                    <h3 className={`text-3xl sm:text-4xl font-semibold tracking-tight mb-3 ${selectedCourse.colorClass}`}>
                       {selectedCourse.name}
                     </h3>
-                    <p className="text-lg text-zinc-500 font-light leading-relaxed">
+                    <p className="text-base sm:text-lg text-zinc-500 font-normal leading-relaxed">
                       {selectedCourse.desc}
                     </p>
                   </div>
 
-                  <div className="space-y-10">
+                  <div className="space-y-8">
                     <div>
                       <h4 className="text-lg font-semibold text-zinc-900 mb-4 tracking-tight">
                         核心特点
                       </h4>
-                      <ul className="space-y-4">
+                      <ul className="space-y-3">
                         {selectedCourse.details.features.map((feature, i) => (
-                          <li key={i} className="flex items-start gap-3 text-zinc-600 font-light">
+                          <li key={i} className="flex items-start gap-3 text-zinc-600 font-normal text-sm sm:text-base">
                             <CheckCircle2 className="w-5 h-5 mt-0.5 shrink-0 text-zinc-900" />
                             <span className="leading-relaxed">{feature}</span>
                           </li>
@@ -201,9 +197,9 @@ export default function Curriculum() {
                       <h4 className="text-lg font-semibold text-zinc-900 mb-4 tracking-tight">
                         培养目标
                       </h4>
-                      <ul className="space-y-4">
+                      <ul className="space-y-3">
                         {selectedCourse.details.outcomes.map((outcome, i) => (
-                          <li key={i} className="flex items-start gap-3 text-zinc-600 font-light">
+                          <li key={i} className="flex items-start gap-3 text-zinc-600 font-normal text-sm sm:text-base">
                             <CheckCircle2 className="w-5 h-5 mt-0.5 shrink-0 text-zinc-900" />
                             <span className="leading-relaxed">{outcome}</span>
                           </li>
@@ -211,9 +207,9 @@ export default function Curriculum() {
                       </ul>
                     </div>
 
-                    <div className="bg-zinc-50 p-6 rounded-xl">
+                    <div className="bg-[#F5F5F7] p-5 rounded-2xl">
                       <h4 className="text-sm font-semibold text-zinc-900 mb-2 tracking-tight">硬件配置</h4>
-                      <p className="text-zinc-500 text-sm font-light leading-relaxed">
+                      <p className="text-zinc-500 text-sm font-normal leading-relaxed">
                         {selectedCourse.details.hardware}
                       </p>
                     </div>
