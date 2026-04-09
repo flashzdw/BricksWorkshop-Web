@@ -55,7 +55,7 @@ export default function Pathway() {
               className="relative flex-1 pl-8 md:pl-0"
             >
               {/* Dot */}
-              <div className="absolute left-0 top-[6px] md:relative md:top-0 md:left-0 w-3 h-3 bg-zinc-900 rounded-full ring-8 ring-zinc-50 md:mb-8" />
+              <div className="absolute left-0 top-[6px] md:relative md:top-0 md:left-0 w-3 h-3 bg-blue-600 rounded-full ring-8 ring-zinc-50 md:mb-8" />
               
               <h3 className="text-2xl font-bold text-zinc-900 mb-4 tracking-tight">{step.title}</h3>
               <p className="text-lg text-zinc-500 font-light leading-relaxed">{step.desc}</p>

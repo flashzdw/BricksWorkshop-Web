@@ -53,7 +53,7 @@ export default function Statistics() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="flex flex-col items-center justify-center"
             >
-              <div className="text-5xl sm:text-6xl md:text-7xl font-semibold tracking-tighter text-zinc-900 mb-3">
+              <div className="text-5xl sm:text-6xl md:text-7xl font-semibold tracking-tighter text-blue-600 mb-3">
                 <Counter from={0} to={stat.value} />
                 <span>{stat.suffix}</span>
               </div>

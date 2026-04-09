@@ -6,6 +6,7 @@ const courses = [
   {
     id: '123',
     name: 'VEX 123',
+    colorClass: 'text-red-500',
     age: '4-7岁',
     desc: '启蒙阶段。通过无屏编程，引导幼儿在玩乐中理解基础逻辑与序列，激发对科技的初步好奇心。',
     image: '/gallery/vex-123.png',
@@ -26,6 +27,7 @@ const courses = [
   {
     id: 'go',
     name: 'VEX GO',
+    colorClass: 'text-emerald-500',
     age: '8-10岁',
     desc: '探索阶段。结合结构搭建与简单代码，培养空间想象力和问题解决能力，完成从具象到抽象的过渡。',
     image: '/gallery/vex-go.png',
@@ -46,6 +48,7 @@ const courses = [
   {
     id: 'iq',
     name: 'VEX IQ',
+    colorClass: 'text-blue-600',
     age: '11-14岁',
     desc: '进阶阶段。复杂机械结构与高级传感器编程，团队协作完成高难度挑战，为参与国际赛事打下坚实基础。',
     image: '/gallery/vex-iq.png',
@@ -108,7 +111,7 @@ export default function Curriculum() {
 
                 <div className="w-full lg:w-1/2 flex flex-col justify-center">
                   <div className="text-sm font-semibold tracking-widest text-zinc-400 uppercase mb-4">{course.age}</div>
-                  <h3 className="text-4xl md:text-5xl font-bold text-zinc-900 mb-6 tracking-tighter">
+                  <h3 className={`text-4xl md:text-5xl font-bold mb-6 tracking-tighter ${course.colorClass}`}>
                     {course.name}
                   </h3>
                   <p className="text-xl text-zinc-500 font-light leading-relaxed mb-10">
@@ -171,7 +174,7 @@ export default function Curriculum() {
                     <span className="text-xs font-semibold tracking-widest text-zinc-400 uppercase mb-2 block">
                       {selectedCourse.age}
                     </span>
-                    <h3 className="text-3xl sm:text-4xl font-bold text-zinc-900 tracking-tighter mb-4">
+                    <h3 className={`text-3xl sm:text-4xl font-bold tracking-tighter mb-4 ${selectedCourse.colorClass}`}>
                       {selectedCourse.name}
                     </h3>
                     <p className="text-lg text-zinc-500 font-light leading-relaxed">
