@@ -153,27 +153,19 @@ export default function Curriculum() {
               transition={{ type: "spring", damping: 25, stiffness: 200 }}
               className="fixed inset-x-0 top-0 h-[100dvh] z-50 flex items-end sm:items-center justify-center p-0 sm:p-6 pointer-events-none"
             >
-              <div className="bg-white rounded-t-[32px] sm:rounded-[32px] overflow-hidden w-full max-w-4xl max-h-[90dvh] flex flex-col md:flex-row pointer-events-auto relative shadow-2xl">
+              <div className="bg-white rounded-t-[32px] sm:rounded-[32px] overflow-hidden w-full max-w-2xl max-h-[90dvh] flex flex-col pointer-events-auto relative shadow-2xl">
                 
                 {/* Mobile drag indicator */}
                 <div className="absolute top-3 left-1/2 -translate-x-1/2 w-12 h-1.5 bg-zinc-200 rounded-full sm:hidden z-20" />
 
                 <button
                   onClick={() => setSelectedCourse(null)}
-                  className="absolute top-4 right-4 z-20 p-2 text-zinc-500 hover:text-zinc-900 transition-colors bg-white/80 backdrop-blur-md rounded-full shadow-sm"
+                  className="absolute top-4 right-4 z-20 p-2 text-zinc-500 hover:text-zinc-900 transition-colors bg-zinc-100 hover:bg-zinc-200 rounded-full"
                 >
                   <X className="w-5 h-5" />
                 </button>
 
-                <div className="w-full md:w-2/5 h-48 sm:h-auto bg-[#F5F5F7] flex-shrink-0 flex items-center justify-center p-6 sm:p-8">
-                  <img
-                    src={selectedCourse.image}
-                    alt={selectedCourse.name}
-                    className="w-full h-full object-contain mix-blend-multiply"
-                  />
-                </div>
-
-                <div className="w-full md:w-3/5 p-6 sm:p-10 overflow-y-auto custom-scrollbar flex flex-col gap-8 pb-10 sm:pb-10">
+                <div className="w-full p-6 pt-12 sm:p-12 overflow-y-auto custom-scrollbar flex flex-col gap-8 pb-10">
                   <div>
                     <span className="text-xs font-semibold tracking-widest text-zinc-400 uppercase mb-2 block">
                       {selectedCourse.age}
