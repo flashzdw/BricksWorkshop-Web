@@ -10,8 +10,8 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
         >
-          <h1 className="text-5xl sm:text-7xl md:text-9xl font-bold tracking-tighter text-black mb-6 leading-tight sm:leading-none whitespace-nowrap">
-            BricksWorkshop
+          <h1 className="text-5xl sm:text-7xl md:text-9xl font-bold tracking-tighter mb-6 leading-tight sm:leading-none whitespace-nowrap">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-yellow-500 to-blue-500">BricksWorkshop</span>
           </h1>
           <p className="text-xl sm:text-2xl md:text-3xl text-zinc-500 font-medium max-w-3xl mx-auto mb-12 tracking-tight">
             专注力与创造力的起点。<br className="hidden sm:block" />西北首家 VEX 学苑，探索未来科技的无限可能。

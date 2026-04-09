@@ -16,12 +16,12 @@ export default {
       },
       keyframes: {
         "marquee-left": {
-          from: { transform: "translateX(0)" },
-          to: { transform: "translateX(-100%)" },
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
         },
         "marquee-right": {
-          from: { transform: "translateX(-100%)" },
-          to: { transform: "translateX(0)" },
+          "0%": { transform: "translateX(-50%)" },
+          "100%": { transform: "translateX(0)" },
         },
         "accordion-down": {
           from: { height: "0" },

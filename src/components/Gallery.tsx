@@ -43,8 +43,8 @@ export default function Gallery() {
 
       <div className="w-full flex flex-col gap-6 sm:gap-8">
         {/* Row 1: Scrolling Left */}
-        <div className="relative w-full overflow-hidden flex gap-6 sm:gap-8">
-          <div className="flex animate-marquee-left gap-6 sm:gap-8 min-w-max">
+        <div className="relative w-full overflow-hidden flex">
+          <div className="flex animate-marquee-left gap-6 sm:gap-8 min-w-max pr-6 sm:pr-8">
             {marqueeItems1.map((src, i) => (
               <div 
                 key={`row1-a-${i}`} 
@@ -54,7 +54,7 @@ export default function Gallery() {
               </div>
             ))}
           </div>
-          <div className="flex animate-marquee-left gap-6 sm:gap-8 min-w-max">
+          <div className="flex animate-marquee-left gap-6 sm:gap-8 min-w-max pr-6 sm:pr-8">
             {marqueeItems1.map((src, i) => (
               <div 
                 key={`row1-b-${i}`} 
@@ -67,8 +67,8 @@ export default function Gallery() {
         </div>
 
         {/* Row 2: Scrolling Right */}
-        <div className="relative w-full overflow-hidden flex gap-6 sm:gap-8">
-          <div className="flex animate-marquee-right gap-6 sm:gap-8 min-w-max">
+        <div className="relative w-full overflow-hidden flex">
+          <div className="flex animate-marquee-right gap-6 sm:gap-8 min-w-max pr-6 sm:pr-8">
             {marqueeItems2.map((src, i) => (
               <div 
                 key={`row2-a-${i}`} 
@@ -78,7 +78,7 @@ export default function Gallery() {
               </div>
             ))}
           </div>
-          <div className="flex animate-marquee-right gap-6 sm:gap-8 min-w-max">
+          <div className="flex animate-marquee-right gap-6 sm:gap-8 min-w-max pr-6 sm:pr-8">
             {marqueeItems2.map((src, i) => (
               <div 
                 key={`row2-b-${i}`} 
