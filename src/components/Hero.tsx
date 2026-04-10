@@ -14,7 +14,7 @@ export default function Hero() {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-yellow-500 to-blue-500">BricksWorkshop</span>
           </h1>
           <p className="text-xl sm:text-2xl md:text-3xl text-zinc-500 font-medium max-w-3xl mx-auto mb-12 tracking-tight">
-            专注力与创造力的起点。<br className="hidden sm:block" />西北首家 VEX 学苑，探索未来科技的无限可能。
+            关于孩子，我们不想凑合。<br className="hidden sm:block" />西北首家 VEX 学苑，以纯粹的科技乐趣，激发未来的无限可能。
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
              <a href="#curriculum" className="w-56 sm:w-auto text-center px-8 py-3 bg-black text-white rounded-full text-lg font-medium hover:bg-zinc-800 transition-colors">探索课程</a>

@@ -5,32 +5,32 @@ const features = [
   {
     icon: Target,
     title: '极致专注',
-    description: '建模是专注度非常高的游戏。我们通过VEX机器人教育，培养孩子在复杂任务中的绝对专注力。'
+    description: '建模是专注度非常高的游戏。通过VEX体系，培养孩子在复杂任务中的绝对专注力与创造力。'
   },
   {
     icon: Lightbulb,
     title: '西北首家',
-    description: '作为中国西北首家VEX学苑，我们致力于将全球领先的STEM教育体系引入汉中。'
+    description: '2015年成立，2022年正式升级为西北首家官方校区，为汉中带来前沿的 STEAM 教育资源。'
   },
   {
     icon: Rocket,
     title: '寓教于乐',
-    description: '摒弃枯燥的理论灌输，让孩子们在小课堂的动手实践中，体验科技带来的纯粹乐趣。'
+    description: '摒弃枯燥的理论灌输，以学生为中心，让孩子们在小课堂的动手实践中，体验科技带来的真实乐趣。'
   },
   {
     icon: Users,
-    title: '顶尖师资团队',
-    description: '我们的导师团队具备丰富的 VEX 机器人赛事经验与教育心理学背景，亦师亦友，因材施教。'
+    title: '用心倾听',
+    description: '导师团队因对 STEAM 教育的热爱走到一起，不仅传授知识，更用心倾听每一个孩子的真实反馈。'
   },
   {
     icon: ShieldCheck,
-    title: '国际标准体系',
-    description: '课程内容与 VEX 官方接轨，涵盖 123、GO、IQ、V5 全年龄段，打通国际赛事的升学与成长路径。'
+    title: '直通国际赛事',
+    description: '开设 VEX GO、IQ 等课程，并带领 8009 战队征战世锦赛、WRC世界机器人大会等顶尖赛事。'
   },
   {
     icon: MapPin,
     title: '专业校区环境',
-    description: '汉中滨江路校区配备专业级 VEX 比赛场地与全套硬件器材，为孩子们提供沉浸式的创造空间。'
+    description: '坐落于天汉长街 E区，自然光透过大面积玻璃门窗，原木色陈列柜与专业练习场地一览无余。'
   }
 ];
 
@@ -51,10 +51,10 @@ export default function About() {
           </h2>
           <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 lg:gap-24">
             <p className="text-lg sm:text-xl md:text-2xl text-zinc-600 font-light leading-relaxed flex-1">
-              卓越科技 BricksWorkshop 是中国西北地区首家 VEX 官方授权学苑。我们坐落于美丽的陕西汉中滨江路，不仅是一个学习机器人搭建与编程的地方，更是一个激发潜能、塑造未来创新者的前沿阵地。
+              源起秦岭南麓，卓越科技 BricksWorkshop 成立于2015年。身处教育资源有限的小城市，我们始终坚持教育的初心与情怀，致力于将全球领先的高品质教育带给这里的孩子。2022年，我们正式升级为中国西北地区首家 VEX 学苑官方校区。
             </p>
             <p className="text-base md:text-lg text-zinc-500 font-light leading-relaxed flex-1">
-              我们坚信“在玩中学（Learning by doing）”的力量。在这个人工智能与机器人技术飞速发展的时代，让孩子尽早接触 VEX 机器人，不仅能锻炼逻辑思维与空间想象力，更能培养面对挫折时的韧性与团队协作精神。
+              “关于孩子，我们不想凑合”是我们成立至今未改变的Slogan。在这里，导师们不仅是知识的传授者，更是倾听者与观察者，陪伴孩子们在真实赛场上历练，享受作为一名 VEXer 的纯粹时光。
             </p>
           </div>
         </motion.div>

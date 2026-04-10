@@ -24,8 +24,8 @@ export default function Campus() {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-yellow-500 to-blue-500">校区</span>环境
           </h2>
           <p className="text-xl sm:text-2xl text-zinc-500 font-normal max-w-3xl mx-auto">
-            沉浸式的创造空间。<br className="hidden sm:block" />
-            配备专业级 VEX 比赛场地与全套硬件器材，为孩子们提供最优质的学习体验。
+            一家“不凑合”的校区。<br className="hidden sm:block" />
+            沿着绿意盎然的园区大道，自然光透过大面积玻璃门窗投射进校区。原木色机器陈列柜与宽敞的专业场地一览无余，让学习变得通透而愉悦。
           </p>
         </motion.div>
       </div>
