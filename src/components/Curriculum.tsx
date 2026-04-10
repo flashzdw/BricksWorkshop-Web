@@ -8,7 +8,7 @@ const courses = [
     name: 'VEX 123',
     colorClass: 'text-red-500',
     age: '4-7岁',
-    desc: '启蒙阶段。通过无屏编程，引导幼儿在玩乐中理解基础逻辑与序列，激发对科技的初步好奇心。',
+    desc: '启蒙阶段。VEX 123 机器人在小课堂中实际应用，通过无屏编程引导幼儿在玩乐中理解基础逻辑与序列，激发对科技的初步好奇心。',
     image: '/gallery/vex-123.png',
     details: {
       features: [
@@ -29,7 +29,7 @@ const courses = [
     name: 'VEX GO',
     colorClass: 'text-emerald-500',
     age: '8-10岁',
-    desc: '探索阶段。结合结构搭建与简单代码，培养空间想象力和问题解决能力，完成从具象到抽象的过渡。',
+    desc: '探索阶段。“建模是专注度非常高的游戏”，结合结构搭建与简单代码，培养孩子在复杂任务中的绝对专注力与空间想象力。',
     image: '/gallery/vex-go.png',
     details: {
       features: [
@@ -50,7 +50,7 @@ const courses = [
     name: 'VEX IQ',
     colorClass: 'text-blue-600',
     age: '11-14岁',
-    desc: '进阶阶段。复杂机械结构与高级传感器编程，团队协作完成高难度挑战，为参与国际赛事打下坚实基础。',
+    desc: '进阶阶段。复杂机械结构与高级传感器编程，推动 VEX 课程进“校园”，让孩子在团队协作中完成高难度挑战，为国际赛事打下坚实基础。',
     image: '/gallery/vex-iq.png',
     details: {
       features: [

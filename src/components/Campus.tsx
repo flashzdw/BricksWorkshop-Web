@@ -24,8 +24,8 @@ export default function Campus() {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-yellow-500 to-blue-500">校区</span>环境
           </h2>
           <p className="text-xl sm:text-2xl text-zinc-500 font-normal max-w-3xl mx-auto">
-            沉浸式的创造空间。<br className="hidden sm:block" />
-            配备专业级 VEX 比赛场地与全套硬件器材，为孩子们提供最优质的学习体验。
+            坐落于汉中市滨江西路天汉长街。<br className="hidden sm:block" />
+            自然光透过大面积玻璃门窗，原木色机器陈列柜、宽敞的书桌与大面积练习场地一览无余，通透的环境让学习更加轻松愉悦。
           </p>
         </motion.div>
       </div>

@@ -19,8 +19,8 @@ const features = [
   },
   {
     icon: Users,
-    title: '顶尖师资团队',
-    description: '我们的导师团队具备丰富的 VEX 机器人赛事经验与教育心理学背景，亦师亦友，因材施教。'
+    title: '倾听与观察',
+    description: '我们的教师是倾听者与观察者。接收来自学生、家长及赛场的真实反馈，以学生为中心，因材施教。'
   },
   {
     icon: ShieldCheck,
@@ -30,7 +30,7 @@ const features = [
   {
     icon: MapPin,
     title: '专业校区环境',
-    description: '汉中滨江路校区配备专业级 VEX 比赛场地与全套硬件器材，为孩子们提供沉浸式的创造空间。'
+    description: '坐落于天汉长街 E 区，配备大面积玻璃门窗与原木色陈列柜，为孩子们提供通透、沉浸式的创造空间。'
   }
 ];
 
@@ -46,15 +46,15 @@ export default function About() {
           className="mb-12 sm:mb-20"
         >
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-zinc-900 mb-8 tracking-tight">
-            重新定义 <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-yellow-500 to-blue-500">青少年科技教育</span>
+            关于孩子 <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-yellow-500 to-blue-500">我们不想凑合</span>
           </h2>
           <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 lg:gap-24">
             <p className="text-lg sm:text-xl md:text-2xl text-zinc-600 font-light leading-relaxed flex-1">
-              卓越科技 BricksWorkshop 是中国西北地区首家 VEX 官方授权学苑。我们坐落于美丽的陕西汉中滨江路，不仅是一个学习机器人搭建与编程的地方，更是一个激发潜能、塑造未来创新者的前沿阵地。
+              卓越科技 BricksWorkshop 成立于 2015 年，2022 年正式升级为中国西北地区首家 VEX 官方授权学苑。坐落于美丽的陕西汉中滨江西路，这里不仅是学习机器人搭建与编程的地方，更是激发潜能、塑造未来创新者的前沿阵地。
             </p>
             <p className="text-base md:text-lg text-zinc-500 font-light leading-relaxed flex-1">
-              我们坚信“在玩中学（Learning by doing）”的力量。在这个人工智能与机器人技术飞速发展的时代，让孩子尽早接触 VEX 机器人，不仅能锻炼逻辑思维与空间想象力，更能培养面对挫折时的韧性与团队协作精神。
+              教育要有初心、情怀，跟随前沿。在这个人工智能与机器人技术飞速发展的时代，尽早接触 VEX 机器人不仅能锻炼逻辑思维与空间想象力，更能培养面对挫折时的韧性与团队协作精神。“以学生为中心”是我们不变的坚持。
             </p>
           </div>
         </motion.div>
